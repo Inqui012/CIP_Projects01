@@ -1,3 +1,4 @@
+        /* 공통 CSS */
+        .maxwidth1200 {max-width: 1000px;}
         header {height: 100px; width: 100%; background-color: bisque; position: fixed;}
-
         footer {height: 300px; width: 100%; background-color: rgb(83, 83, 83);}
