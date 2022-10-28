@@ -32,4 +32,6 @@
 * CSS, JS, Img 는 각 폴더안에 담당하시는 페이지 번호 폴더를 이용해주세요.
 * Form 태그 이외에 id 는 사용하지 않습니다.
 * 태그의 클래스명은 케밥형식으로 사용합니다. 예) class="menu-list-and"
-* 자바스크립트의 
+* 자바스크립트의 변수/함수명은 카멜형식으로 사용합니다. 예) const userList / function simpleFunc
+* 자바스크립트의 클래스/객체명은 파스칼형식으로 사용합니다. 예) Class User / const Yong = {}
+* 제이쿼리의 변수명은 헝가리안 카멜형식으로 사용합니다. 예) const $userList
