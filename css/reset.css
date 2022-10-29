@@ -50,3 +50,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* 추가 */
+a, a:hover, a:active {
+	color: #000;
+	outline: none;
+	text-decoration: none;
+}
