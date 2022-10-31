@@ -20,6 +20,7 @@ $("#select-month").change(function () {
     }
 })
 
+// 돌아가기버튼으로 속성 초기화
 $(".btn-01").click(function () {
     $("input[type=text]").siblings("span").css({ display: "none" });
     $("input[type=text]").css({ border: "1px solid #000"})
@@ -36,7 +37,9 @@ $(".btn-02").click(function (e) {
     $appointName = $("#user-name").val();
     $appointTel = $("#user-tel").val();
 })
+sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
 
+// 펑션구역
 function nameCheck() {
     if (!$("#user-name").val().replace(/\s/g, "")) {
         $("#user-name").siblings("span").css({ display: "none" });
@@ -103,4 +106,3 @@ function documentCheck() {
         }
     }
 }
-sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
