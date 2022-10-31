@@ -1,4 +1,5 @@
-let $appointDate, $appointName, $appointTel, $appointVisit, $appointDocu;
+let $appointDate, $appointName, $appointTel, $appointVisit;
+let $appointDocu = [];
 let $appoint_patient = [];
 
 // 셀렉트박스 생성
@@ -30,10 +31,10 @@ $(".btn-02").click(function (e) {
     nameCheck();
     telCheck();
     visitCheck();
+    documentCheck();
     $appointDate = "2022. " + $monthVal + ". " + $("#select-day option:selected").val();
     $appointName = $("#user-name").val();
-    console.log($appointDate);
-    console.log($appointName);
+    $appointTel = $("#user-tel").val();
 })
 
 function nameCheck() {
@@ -83,17 +84,23 @@ function telVailCheck(tel) {
 function visitCheck() {
     switch ($("input[name=visit]:checked").val()) {
         case "yes":
-            console.log("yes")
+            $appointVisit = "yes";
             break;
         case "no":
-            console.log("no")
+            $appointVisit = "no";
             break;
         default:
-            console.log("def")
+            $appointVisit = "none";
             break;
     }
 }
 function documentCheck() {
-    
+    for (var i = 0; i < $("input[name=buy-doc]").length; i++) {
+        if ($("input#buy-doc-" + (i + 1)).is(":checked")) {
+            $appointDocu[i] = $("input#buy-doc-" + (i + 1)).val();
+        } else {
+            $appointDocu[i] = 0;
+        }
+    }
 }
 sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
