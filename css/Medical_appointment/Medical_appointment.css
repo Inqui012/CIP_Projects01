@@ -12,21 +12,21 @@
     border-right-style: none;
     position: absolute;
     top: 108px;
-    left: 100px;
+
 }
 .section .section__tap{
     width: 1250px;
     height: 61px;
     position: absolute;
     top: 200px;
-    left: 85px;
+
 }
 .section .section__tap-border-buttom{
-    width: 375px;
+    width: 365px;
     height: 62px;
     position: absolute;
     top: 195px;
-    left: 725px;
+    left: 640px;
     border-bottom: 1px solid black;
 }
 .section .section__login{
