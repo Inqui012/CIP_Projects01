@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/2/all.css">
+    <link rel="stylesheet" href="./css/2/index.css">
 </head>
 <body>
     <header>
@@ -33,56 +36,100 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="slider">
-            <div class="slider-content-con">
-                <div class="swiper-myswiper">
-                    <div class="swiper-wrap">
-                        <div class="swiper-slide slide1"></div>
-                        <div class="swiper-slide slide2"></div>
-                        <div class="swiper-slide slide3"></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+    <main class="wrap">
+        <section class="slide-section">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slide1"></div>
+                  <div class="swiper-slide slide2"></div>
+                  <div class="swiper-slide slide3"></div>
+                  ...
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </section>
+        <section class="banner-area">
+            <div class="banner-left">
+                <h2>전화번호 : 1544-0000</h2>
+            </div>
+            <div class="banner-right">
+                <p>진료시간 : 평일 09:00 - 20:00</p><br>
+                <p>토요일 : 09:00 - 16:00</p><br>
+                <p>점심시간 : 오후1시 - 오후2시</p><br>
+                <p>일요일 및 공휴일 휴진</p>
             </div>
         </section>
-        <section class="banner-area"><div></div></section>
         <section class="icon-area">
             <div class="img-box">
                 <a href="#">
-                    <span></span>
+                    <i class="fa-duotone fa-user-doctor"></i>
+                    <span>fasoliddoctor</span>
                 </a>
                 <a href="#">
+                    <div>
+                    <i class="fa-duotone fa-syringe"></i>
                     <span></span>
+                    </div>
                 </a>
                 <a href="#">
-                    <span></span>
+                    <div>
+                    <i class="fa-duotone fa-stethoscope"></i>
+                    <span>청진기모양</span>
+                    </div>
                 </a>
                 <a href="#">
-                    <span></span>
+                    <div>
+                    <i class="fa-duotone fa-mortar-pestle"></i>
+                    <span>약제조아이콘</span>
+                    </div>
                 </a>
                 <a href="#">
-                    <span></span>
+                    <div>
+                    <i class="fa-duotone fa-person-cane"></i>
+                    <span>지팡이노인</span>
+                    </div>
                 </a>
                 <a href="#">
-                    <span></span>
+                    <div>
+                    <i class="fa-duotone fa-hospital"></i>
+                    <span>병원아이콘(오시는길?)</span>
+                    </div>
                 </a>
-                <a href="#">
+                <!-- <a href="#">
+                    <img src="" alt="">
                     <span></span>
-                </a>
+                </a> -->
             </div>
         </section>
         <section class="reservation-area">
             <ul class="reservation-box">
-                <li><a></a>병원진료예약</li>
-                <li><a></a>예약확인</li>
-                <li><a></a>카카오톡 상담하기</li>
-                <li><a></a>빠른예약</li>
+                <li class="reservation-list1"><a href="#"></a>병원진료예약</li>
+                <li class="reservation-list2"><a href="#"></a>예약확인</li>
+                <li class="reservation-list3"><a href="#"></a>카카오톡 상담하기</li>
+                <li class="reservation-list4"><a href="#"></a>빠른예약</li>
             </ul>
         </section>
-        <section class="miniboard-area"></section>
+        <!-- ↓여긴 모르겠다... -->
+        <section class="miniboard-area"> 
+            <form>
+                <table>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                </table>
+            </form>
+        </section>
     </main>
     <footer>
         <!-- 공통 -->
@@ -115,5 +162,9 @@
             </div>
         </div>
     </footer>
+    <!-- <script src="./js/2/swiper.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f314355f06.js" crossorigin="anonymous"></script>
+    <script src="./js/2/index1.js"></script>
 </body>
 </html>

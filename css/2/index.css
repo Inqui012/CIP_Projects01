@@ -1,0 +1,107 @@
+@import url(../reset.css);
+@import url(../common.css);
+@import url(../main.css);
+@import url(./all.css);
+
+section .con {
+    margin: 0 auto;   
+}
+
+/* 슬라이드 영역 */
+
+.swiper {
+    max-width: 1440px;
+    max-height: 700px;
+}
+
+.swiper-wrapper{
+    background: orange;
+    width: 100%;
+	height: 700px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* height: 100%; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide.slide1 {
+    background: url(../2/img/main_visual_img01.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.swiper-slide.slide2 {
+    background: url(../2/img/main_visual_img02.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.swiper-slide.slide3 {
+    background: url(../2/img/main_visual_img03.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+/* 배너영역 */
+
+.banner-area {
+    height: 180px;
+    background-color: rgb(108, 148, 255);
+    background-size: cover;
+}
+
+.banner-area .banner-left {
+    align-items: left;
+}
+
+.banner-area .banner-left h1 {
+    font-size: 55px;
+    text-align: left;
+}
+
+.banner-area .banner-right {
+    align-items: right;
+}
+
+.banner-area .banner-right p {
+    font-size: 25px;
+    text-align: left;
+}
+
+
+/* 아이콘영역 */
+
+.icon-area {
+    height: 140px;
+    background-color: aquamarine;
+}
+
+/* 예약 영역 */
+
+.reservation-area {
+    height: 360px;
+    align-items: center;
+    display: inline-flex;
+}
+
+/* 하단 미니테이블 영역 */
+
+.miniboard-area{
+    height: 600px;
+    background-color: chartreuse;
+}
