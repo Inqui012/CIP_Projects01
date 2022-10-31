@@ -106,7 +106,7 @@ join_id__bt.addEventListener("click",function(){
 let join_name__bt = document.querySelector(".login__name .join__bt")
 join_name__bt.addEventListener("click",function(){
     let row = document.querySelector(".appoint-delete__body")
-    let patient = new Patient(1,'김범주','이빈후과','김범주','1 진료실', '2020. 11. 07', '14:30', '예약 완료');
+    let patient = new Patient(getStorage());
     let temp = 
     `
     <tr>

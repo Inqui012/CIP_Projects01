@@ -31,7 +31,7 @@ header > div > div a:hover::before {color: #000;}
 
 /* 메인공간 */
 main {margin-top: 100px; width: 100%;}
-main div.main {width: 80%; margin: 0 auto;}
+main div.section {width: 80%; margin: 0 auto;}
 
 /* 푸터 */
 footer {height: 300px; width: 100%; background-color: #0E2773;}

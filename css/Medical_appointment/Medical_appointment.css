@@ -1,38 +1,18 @@
 @charset "UTF-8";
-*{
-    margin: 0 auto;
-    padding: 0;
-}
-#wrap{
-    width: 1440px;
-    height: 1024px;
-    border: 1px solid black;
-}
-.header{
-    height: 100px;
-    border: 1px solid black;
-    }
-.footer{
-    height: 250px;
-    bottom: 0px;
-    border: 1px solid black;
-}
 .section{
     padding-bottom: 622px;
     position: relative;
 }
 .section .section__title{
-    width: 1250px;
+    width: 1000px;
     height: 80px;
-    background-color: white;
     border: 1px solid #999999;
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
     position: absolute;
-    top: 70px;
-    left: 85px;
-    
+    top: 108px;
+    left: 100px;
 }
 .section .section__tap{
     width: 1250px;
@@ -40,24 +20,27 @@
     position: absolute;
     top: 200px;
     left: 85px;
-    
 }
 .section .section__tap-border-buttom{
-    width: 610px;
+    width: 375px;
     height: 62px;
     position: absolute;
-    top: 200px;
-    left: 724px;
+    top: 195px;
+    left: 725px;
     border-bottom: 1px solid black;
 }
 .section .section__login{
-    width: 1250px;
+    width: 1000px;
     height: 200px;
     border: 1px solid black;
     position: absolute;
     top: 115px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+.section__login .join{
+    padding: 35px;
 }
 
 table th{
@@ -67,21 +50,17 @@ table td{
     padding: 3px 7px;
 }
 
-.section__login .login-img{
-    padding: 10px;
-    float: right;
-}
-
 .section__login .join input{
     padding: 7px 0;
 }
 
 .section .section__appoint-delete{
-    width: 1250px;
+    width: 900px;
     height: 280px;
     border: 1px solid black;
     position: absolute;
     top: 115px;
+    left: 50px;
 }
 .section__title p:nth-of-type(1){
     font-size: 30px;
@@ -136,21 +115,24 @@ ul.contents li.show {
     padding: 26px 20px;
     border-radius: 6px;
     border: 1px solid black;
+    position:absolute
 }
 .join .join__bt:hover{
     background-color: forestgreen;
     color: white;
 }
 #delete-bt{
-    float: right;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 6px;
     padding: 6px 8px;
     border-radius: 5px;
     border: 1px solid black;
+    display: inline-block;
+    margin-left: 600px;
 }
 #appoint-delete__table{
     border-collapse: collapse;
+    margin: 0 auto;
+
 }
 #appoint-delete__table tr th,
 #appoint-delete__table tr td{
