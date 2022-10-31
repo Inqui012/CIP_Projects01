@@ -12,6 +12,7 @@ section .con {
 .swiper {
     max-width: 1440px;
     max-height: 700px;
+    margin-top: 5px;
 }
 
 .swiper-wrapper{
@@ -70,8 +71,10 @@ section .con {
 }
 
 .banner-area .banner-left h1 {
-    font-size: 55px;
-    text-align: left;
+    font-size: 40px;
+    /* text-align: left; */
+    display: block;
+
 }
 
 .banner-area .banner-right {
@@ -79,8 +82,12 @@ section .con {
 }
 
 .banner-area .banner-right p {
-    font-size: 25px;
-    text-align: left;
+    font-size: 20px;
+    /* text-align: left; */
+    margin: 1px auto 0;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 30px;
 }
 
 
@@ -96,12 +103,14 @@ section .con {
 .reservation-area {
     height: 360px;
     align-items: center;
-    display: inline-flex;
+    align-items: center;
+    display: flex;
 }
 
+.
 /* 하단 미니테이블 영역 */
 
-.miniboard-area{
+.miniboard-area {
     height: 600px;
     background-color: chartreuse;
 }
