@@ -16,10 +16,13 @@ main div.main > form table.reserv-input > caption {display: none;}
 main div.main > form table.reserv-input > tbody > tr {border-bottom: 1px solid #0E2773;}
 main div.main > form table.reserv-input > tbody > tr > th {padding: 30px; text-align: center;  letter-spacing: 2px; background-color: #DBF0FE;}
 main div.main > form table.reserv-input > tbody > tr td {padding-left: 10px;}
+main div.main > form table.reserv-input > tbody > tr:nth-child(2) td {position: relative;}
+main div.main > form table.reserv-input > tbody > tr td span {position: absolute; bottom: 0; left: 10px; color: red; font-size: 0.8em; display: none; padding: 5px 0;}
+main div.main > form table.reserv-input > tbody > tr td select {border: 1px solid #000;}
 main div.main > form table.reserv-input > tbody > tr td p {display: inline-block; padding: 0 10px;}
 main div.main > form table.reserv-input > tbody > tr td select {font-size: 18px; width: 100px; padding: 10px 5px;}
 main div.main > form table.reserv-input > tbody > tr td select:last-of-type {margin-left: 20px;}
-main div.main > form table.reserv-input > tbody > tr td input[type="text"] {font-size: 18px; padding: 5px 10px; width: 150px;}
+main div.main > form table.reserv-input > tbody > tr td input[type="text"] {font-size: 18px; padding: 5px 10px; width: 150px; border: 1px solid #000;}
 
 main div.main > form table.reserv-input > tbody > tr:nth-child(4) td div {width: 30%; float: left; padding: 15px 5px;}
 main div.main > form table.reserv-input > tbody > tr:nth-child(4) td div::after {content: ''; display: block; visibility: hidden; clear: both;}
