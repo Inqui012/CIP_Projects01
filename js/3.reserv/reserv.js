@@ -31,7 +31,7 @@ $(".btn-02").click(function (e) {
     e.preventDefault();
     nameCheck();
     telCheck();
-    visitCheck();
+    // visitCheck();
     documentCheck();
     $appointDate = "2022. " + $monthVal + ". " + $("#select-day option:selected").val();
     $appointName = $("#user-name").val();
@@ -97,6 +97,7 @@ function visitCheck() {
             break;
     }
 }
+// Sum으로 수정예정
 function documentCheck() {
     for (var i = 0; i < $("input[name=buy-doc]").length; i++) {
         if ($("input#buy-doc-" + (i + 1)).is(":checked")) {
