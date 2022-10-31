@@ -21,6 +21,7 @@ $("#select-month").change(function () {
 
 $(".btn-01").click(function () {
     $("input[type=text]").siblings("span").css({ display: "none" });
+    $("input[type=text]").css({ border: "1px solid #000"})
 })
 
 // 완료버튼 누르면서 변수저장
@@ -28,6 +29,7 @@ $(".btn-02").click(function (e) {
     e.preventDefault();
     nameCheck();
     telCheck();
+    visitCheck();
     $appointDate = "2022. " + $monthVal + ". " + $("#select-day option:selected").val();
     $appointName = $("#user-name").val();
     console.log($appointDate);
@@ -36,27 +38,36 @@ $(".btn-02").click(function (e) {
 
 function nameCheck() {
     if (!$("#user-name").val().replace(/\s/g, "")) {
-        $("input[type=text]").siblings("span").css({ display: "none" });
+        $("#user-name").siblings("span").css({ display: "none" });
         $("#user-name").siblings(".input-required").css({ display: "block" })
         $("#user-name").css({ border: "2px solid red"})
         return false;
     } else {
         if (!nameVailCheck($("#user-name").val())) {
-            $("input[type=text]").siblings("span").css({ display: "none" });
+            $("#user-name").siblings("span").css({ display: "none" });
             $("#user-name").siblings(".input-vail-check").css({ display: "block" });
+            $("#user-name").css({ border: "2px solid red" })
             $("#user-name").css({ border: "2px solid red"})
+            return false;
         }
-        return false;
     }
     return true;
 }
 
 function telCheck() {
     if (!$("#user-tel").val().replace(/\s/g, "")) {
-        $("#user-tel").next(".input-required").css({
-            display: "block"
-        })
+        $("#user-tel").siblings("span").css({ display: "none" });
+        $("#user-tel").siblings(".input-required").css({ display: "block" })
+        $("#user-tel").css({ border: "2px solid red"})
         return false;
+    } else {
+        if (!telVailCheck($("#user-tel").val())) {
+            $("#user-tel").siblings("span").css({ display: "none" });
+            $("#user-tel").siblings(".input-vail-check").css({ display: "block" });
+            $("#user-tel").css({ border: "2px solid red" })
+            $("#user-tel").css({ border: "2px solid red"})
+            return false;
+        }
     }
     return true;
 }
@@ -69,6 +80,20 @@ function telVailCheck(tel) {
     var reg = /^\d{2,3}-\d{3,4}-\d{4}$/;
     return reg.test(tel);
 }
-
+function visitCheck() {
+    switch ($("input[name=visit]:checked").val()) {
+        case "yes":
+            console.log("yes")
+            break;
+        case "no":
+            console.log("no")
+            break;
+        default:
+            console.log("def")
+            break;
+    }
+}
+function documentCheck() {
+    
+}
 sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
-// let name = "2022" + $(월값) + "." + $(읿갓)
