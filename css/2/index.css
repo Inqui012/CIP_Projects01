@@ -70,11 +70,14 @@ section .con {
     align-items: left;
 }
 
+
+
 .banner-area .banner-left h1 {
     font-size: 40px;
     /* text-align: left; */
-    display: block;
-
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .banner-area .banner-right {
@@ -88,6 +91,7 @@ section .con {
     display: flex;
     flex-direction: row-reverse;
     padding: 0 30px;
+    box-sizing: border-box;
 }
 
 
@@ -107,7 +111,7 @@ section .con {
     display: flex;
 }
 
-.
+
 /* 하단 미니테이블 영역 */
 
 .miniboard-area {
