@@ -29,6 +29,8 @@ $(".btn-01").click(function () {
 // 완료버튼 누르면서 변수저장
 $(".btn-02").click(function (e) {
     e.preventDefault();
+    nameCheck();
+    telCheck();
     if (nameCheck() && telCheck()) {
         $("main div.reserv-complete").css({ display: "block" });
         documentCheck();
@@ -118,7 +120,7 @@ function reservCompCount () {
     let count = 5;
     setInterval(() => {
         count--;
-        $("main div.reserv-complete div span").replaceWith(`<span>${count} 초 후에 메인으로 이동합니다.</span>`)
+        $("main div.reserv-complete div span").replaceWith(`<span>${count} 초 후에 화면이 새로고침 됩니다.</span>`)
         if (count == 0) {
             location.reload();
         }
