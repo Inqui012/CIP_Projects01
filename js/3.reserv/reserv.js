@@ -34,10 +34,11 @@ $(".btn-02").click(function (e) {
     // visitCheck();
     documentCheck();
     console.log($appointDocu);
+
     $appointDate = "2022. " + $monthVal + ". " + $("#select-day option:selected").val();
     $appointName = $("#user-name").val();
     $appointTel = $("#user-tel").val();
-    $appoint_patient = [1, '김범주', '이비인후과', $appointName, '1 진료실', $appointDate, '14:30', '예약완료'];
+    $appoint_patient = [1, $appointName, '이비인후과', '김범주', '1 진료실', $appointDate, '14:30', '예약 완료', $appointDocu];
     sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
 })
 
@@ -105,5 +106,9 @@ function documentCheck() {
             $appointDocu += Number($("input#buy-doc-" + (i + 1)).val());
         }
     }
+    console.log($appointDocu);
+    console.log(typeof($appointDocu));
+    
     return $appointDocu;
+    
 }
