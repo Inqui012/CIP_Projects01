@@ -112,6 +112,7 @@ function documentCheck() {
     
 }
 
+// 예약확인으로부터 카운트
 function reservCompCount() {
     let count = 5;
     setInterval(() => {
