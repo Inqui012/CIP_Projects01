@@ -43,17 +43,17 @@ section .con {
 }
 
 .swiper-slide.slide1 {
-    background: url(../2/img/main_visual_img01.jpg);
+    background: url(../2/indeximg/main_visual_img01.jpg);
     background-size: cover;
     background-position:center;
 }
 .swiper-slide.slide2 {
-    background: url(../2/img/main_visual_img02.jpg);
+    background: url(../2/indeximg/main_visual_img02.jpg);
     background-size: cover;
     background-position:center;
 }
 .swiper-slide.slide3 {
-    background: url(../2/img/main_visual_img03.jpg);
+    background: url(../2/indeximg/main_visual_img03.jpg);
     background-size: cover;
     background-position:center;
 }
@@ -62,15 +62,25 @@ section .con {
 
 .banner-area {
     height: 180px;
-    background-color: rgb(108, 148, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner-area::before{
+    content: "";
+    background-image: url(./indeximg/환자.jpg);
     background-size: cover;
+    opacity: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
-
-.banner-area .banner-left {
-    align-items: left;
-}
-
-
 
 .banner-area .banner-left h1 {
     font-size: 40px;
@@ -80,9 +90,6 @@ section .con {
     position: relative;
 }
 
-.banner-area .banner-right {
-    align-items: right;
-}
 
 .banner-area .banner-right p {
     font-size: 20px;
@@ -92,24 +99,124 @@ section .con {
     flex-direction: row-reverse;
     padding: 0 30px;
     box-sizing: border-box;
+    position: relative;
 }
 
 
 /* 아이콘영역 */
 
-.icon-area {
+.icon-area .img-box{
     height: 140px;
-    background-color: aquamarine;
+    background-color: rgb(108, 148, 255);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 30px; */
+    position: relative;
+    text-align: center;
+    font-size: 2.1rem;
+    overflow: hidden;
+}
+
+.img-box .icon {
+    box-sizing: border-box;
+    margin: 10px;
+    display: block; 
 }
 
 /* 예약 영역 */
 
 .reservation-area {
     height: 360px;
-    align-items: center;
-    align-items: center;
-    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    overflow: hidden;
 }
+.reservation-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .reservation-area a {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+} */
+
+.reservation-box1 {
+    width: 240px;
+    height: 360px;
+    background-image: url(./indeximg/예약.jpg);
+    background-size: cover;
+    margin: 5px;
+    position: relative;
+}
+
+.reservation-list1 p {
+    content: "";
+    background-color: #ff9b8a;
+    line-height: 100%;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.reservation-box2 {
+    width: 240px;
+    height: 360px;
+    background-image: url(./indeximg/조회.jpg);
+    background-size: cover;
+    margin: 5px;
+    position: relative;
+}
+
+.reservation-list2 p {
+    content: "";
+    background-color: #b2f078;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.reservation-box3 {
+    width: 240px;
+    height: 360px;
+    background-image: url(./indeximg/카톡.jpg);
+    background-size: cover;
+    margin: 5px;
+    position: relative;
+}
+
+.reservation-list3 p {
+    content: "";
+    background-color: yellow;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.reservation-box4 {
+    width: 240px;
+    height: 360px;
+    background-image: url(./indeximg/인쇄.jpg);
+    background-size: cover;
+    margin: 5px;
+    position: relative;
+}
+
+.reservation-list4 p {
+    content: "";
+    background-color: #7ed9c9;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
 
 
 /* 하단 미니테이블 영역 */
