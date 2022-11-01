@@ -105,14 +105,11 @@ function documentCheck() {
             $appointDocu += Number($("input#buy-doc-" + (i + 1)).val());
         }
     }
-    console.log($appointDocu);
-    console.log(typeof($appointDocu));
-    
-    return $appointDocu;   
+    return $appointDocu;
 }
 
 // 예약확인으로부터 카운트
-function reservCompCount() {
+function reservCompCount () {
     let count = 5;
     setInterval(() => {
         count--;
