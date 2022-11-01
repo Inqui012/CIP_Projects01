@@ -1,3 +1,4 @@
+
 // 로그인/비로그인 로그인 버튼 클릭 시 진료예약 조회 탭 이동
 $(document).ready(function(){
     $("button.join__bt").click(function(){
@@ -12,12 +13,12 @@ $(document).ready(function(){
 
 // window.sessionStorage 예약 받는 Page에서 form이나 input으로 값 받아서 세션 스토리지 선언
 // sessionStorage.setItem("super", JSON.stringify(payload)); 예약 Page에서 data type을 JSON 문자형으로 파싱
-let appoint_patient = [1,'김범주','이빈후과','김범주','1 진료실', '2020. 11. 07', '14:30', '예약 완료'];
-sessionStorage.setItem("appoint", JSON.stringify(appoint_patient));
+// let appoint_patient = [1,'김범주','이빈후과','김범주','1 진료실', '2020. 11. 07', '14:30', '예약 완료'];
+// sessionStorage.setItem("appoint", JSON.stringify(appoint_patient));
 
 function getStorage(){
-    if(!sessionStorage.getItem("appoint",appoint_patient) === false){
-        let geust = JSON.parse(sessionStorage.getItem("appoint",appoint_patient))
+    if(!sessionStorage.getItem("appoint",$appoint_patient) === false){
+        let geust = JSON.parse(sessionStorage.getItem("appoint",$appoint_patient))
         return geust;
     }
 }
@@ -32,7 +33,8 @@ class Patient{    //환자 객체로 진료예약 조회 리스트 출력 value 
         this.reservation_date = partient[5];  // 예약일
         this.reservation_time = partient[6]; // 예약시간
         this.oder_status = partient[7]; // 예약 진행 상황
-        this.reg_num = partient[8];    //등록번호(난수 생성으로 저장)
+        // this.reg_num = partient[8];    //등록번호(난수 생성으로 저장)
+        this.docuSum = partient[8];  // 신청한 서류 값
     }
 
 }
@@ -58,6 +60,7 @@ join_id__bt.addEventListener("click",function(){
     // let patient = new Patient(1,'김범주','이빈후과','김범주','1 진료실', '2020. 11. 07', '14:30', '예약 완료');
     
     let patient = new Patient(getStorage());
+    console.log(patient);
     let temp = 
     `
     <tr>
@@ -72,6 +75,7 @@ join_id__bt.addEventListener("click",function(){
     <td>${patient.reservation_date}</td>
     <td>${patient.reservation_time}</td>
     <td class="oder">${patient.oder_status}</td>
+    <td>${patient.docuSum}원</td>
     </tr>
     `;
     $(row).append(temp);
@@ -121,10 +125,12 @@ join_name__bt.addEventListener("click",function(){
     <td>${patient.reservation_date}</td>
     <td>${patient.reservation_time}</td>
     <td class="oder">${patient.oder_status}</td>
+    <td>${patient.docuSum}원</td>
     </tr>
     `;
     $(row).append(temp);
 })
+
 
 const delete_bt = document.querySelector("#delete-bt")
 delete_bt.addEventListener("click",function(){
