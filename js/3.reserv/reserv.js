@@ -1,5 +1,5 @@
 let $appointDate, $appointName, $appointTel, $appointVisit;
-let $appointDocu = [];
+let $appointDocu = 0;
 let $appoint_patient = [];
 
 // 셀렉트박스 생성
@@ -33,11 +33,13 @@ $(".btn-02").click(function (e) {
     telCheck();
     // visitCheck();
     documentCheck();
+    console.log($appointDocu);
     $appointDate = "2022. " + $monthVal + ". " + $("#select-day option:selected").val();
     $appointName = $("#user-name").val();
     $appointTel = $("#user-tel").val();
+    $appoint_patient = [1, '김범주', '이비인후과', $appointName, '1 진료실', $appointDate, '14:30', '예약완료'];
+    sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
 })
-sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
 
 // 펑션구역
 function nameCheck() {
@@ -97,13 +99,11 @@ function visitCheck() {
             break;
     }
 }
-// Sum으로 수정예정
 function documentCheck() {
     for (var i = 0; i < $("input[name=buy-doc]").length; i++) {
         if ($("input#buy-doc-" + (i + 1)).is(":checked")) {
-            $appointDocu[i] = $("input#buy-doc-" + (i + 1)).val();
-        } else {
-            $appointDocu[i] = 0;
+            $appointDocu += Number($("input#buy-doc-" + (i + 1)).val());
         }
     }
+    return $appointDocu;
 }
