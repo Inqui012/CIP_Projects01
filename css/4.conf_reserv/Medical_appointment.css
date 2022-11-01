@@ -125,7 +125,7 @@ ul.contents li.show {
     background-color: forestgreen;
     color: white;
 }
-#delete-bt{
+.delete-bt{
     margin-top: 6px;
     padding: 6px 8px;
     border-radius: 5px;
