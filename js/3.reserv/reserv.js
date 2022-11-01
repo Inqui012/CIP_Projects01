@@ -29,16 +29,16 @@ $(".btn-01").click(function () {
 // 완료버튼 누르면서 변수저장
 $(".btn-02").click(function (e) {
     e.preventDefault();
-    nameCheck();
-    telCheck();
-    // visitCheck();
-    documentCheck();
-    console.log($appointDocu);
-    $appointDate = "2022. " + $monthVal + ". " + $("#select-day option:selected").val();
-    $appointName = $("#user-name").val();
-    $appointTel = $("#user-tel").val();
-    $appoint_patient = [1, '김범주', '이비인후과', $appointName, '1 진료실', $appointDate, '14:30', '예약완료'];
-    sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
+    if (nameCheck() && telCheck()) {
+        $("main div.reserv-complete").css({ display: "block" });
+        documentCheck();
+        $appointDate = "2022. " + $monthVal + ". " + $("#select-day option:selected").val();
+        $appointName = $("#user-name").val();
+        $appointTel = $("#user-tel").val();
+        $appoint_patient = [1, '김범주', '이비인후과', $appointName, '1 진료실', $appointDate, '14:30', '예약완료'];
+        sessionStorage.setItem("appoint", JSON.stringify($appoint_patient));
+        reservCompCount();
+    }
 })
 
 // 펑션구역
@@ -78,6 +78,7 @@ function telCheck() {
     return true;
 }
 
+// 입력형식체크
 function nameVailCheck(name) {
     var reg = /^[가-힣]{2,4}|[a-zA-Z]{2,10}\s[a-zA-Z]{2,10}$/;
     return reg.test(name);
@@ -86,6 +87,8 @@ function telVailCheck(tel) {
     var reg = /^\d{2,3}-\d{3,4}-\d{4}$/;
     return reg.test(tel);
 }
+
+// 방문경험 체크
 function visitCheck() {
     switch ($("input[name=visit]:checked").val()) {
         case "yes":
@@ -99,6 +102,8 @@ function visitCheck() {
             break;
     }
 }
+
+// 발급서류 가격계산
 function documentCheck() {
     for (var i = 0; i < $("input[name=buy-doc]").length; i++) {
         if ($("input#buy-doc-" + (i + 1)).is(":checked")) {
@@ -106,4 +111,16 @@ function documentCheck() {
         }
     }
     return $appointDocu;
+}
+
+// 예약확인으로부터 카운트
+function reservCompCount () {
+    let count = 5;
+    setInterval(() => {
+        count--;
+        $("main div.reserv-complete div span").replaceWith(`<span>${count} 초 후에 메인으로 이동합니다.</span>`)
+        if (count == 0) {
+            location.replace("https://inqui012.github.io/CIP_Projects01/index.html");
+        }
+    }, 1000)
 }
