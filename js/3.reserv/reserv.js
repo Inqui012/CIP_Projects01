@@ -120,7 +120,7 @@ function reservCompCount () {
         count--;
         $("main div.reserv-complete div span").replaceWith(`<span>${count} 초 후에 메인으로 이동합니다.</span>`)
         if (count == 0) {
-            location.replace("https://inqui012.github.io/CIP_Projects01/index.html");
+            location.reload();
         }
     }, 1000)
 }
