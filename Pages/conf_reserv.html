@@ -1,154 +1,148 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>진료예약 조회 / 취소</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/4.conf_reserv/Medical_appointment.css">
-
-</head>
-<body>
-    <div id="wrap">
-        <header class="header">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>진료예약 조회 / 취소</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <div id="wrap">
+         <header class="header">
             <div class="maxwidth-1000">
-                <h1><a href="../index.html"><img src="../Img/3.reserv/logo-220x100.png" alt="logo"></a></h1>
-                <nav class="main-menu font-sebang">
-                    <ul>
-                        <li>
-                            <a href="./intro.html">병원소개</a>
-                        </li>
-                        <li>
-                            <a href="./reserv.html">진료예약</a>
-                        </li>
-                        <li>
-                            <a href="./conf_reserv.html">예약조회</a>
-                        </li>
-                        <li>
-                            <a href="./board.html">게시판</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="login font-Pret">
-                    <a href="#">LogIn</a><a href="#">SignUp</a>
-                </div>
+               <h1>
+                  <a href="../index.html"><img src="Img/logo-220x100.png" alt="logo" /></a>
+               </h1>
+               <nav class="main-menu font-sebang">
+                  <ul>
+                     <li>
+                        <a href="./intro.html">병원소개</a>
+                     </li>
+                     <li>
+                        <a href="./reserv.html">진료예약</a>
+                     </li>
+                     <li>
+                        <a href="./conf_reserv.html">예약조회</a>
+                     </li>
+                     <li>
+                        <a href="./board.html">게시판</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="login font-Pret"><a href="#">LogIn</a><a href="#">SignUp</a></div>
             </div>
-        </header>
+         </header>
 
-        <main>
-            <div class="section font-Pret maxwidth-1000" >
-                 <div class="section__title">
-                    <p>진료예약 조회 / 취소 </p>
-                    <p>생명을 소중히, 환자를 먼저 생각 하는 세브란스 병원 </p>
-                 </div>
+         <main>
+            <div class="section font-Pret maxwidth-1000">
+               <div class="section__title">
+                  <p>진료예약 조회 / 취소</p>
+                  <p>생명을 소중히, 환자를 먼저 생각 하는 세브란스 병원</p>
+               </div>
+            </div>
             <div class="section__tap-border-buttom"></div>
             <div class="section__tap">
-                <ul class="control">
-                    <li class="show">로그인 / 비 로그인</li>
-                    <li>진료예약 조회</li>
-                </ul>
-                <ul class="contents">
-                    <li class="show">
-                        <div class="section__login">
-                            <form action="" method="post" class="login__id join">
-                                <table>
-                                    <tr>
-                                        <th><label for="user-id">아이디</label></th>
-                                        <td><input type="text" name="user-id" id="user-id"></td>
-                                        <td rowspan="2">
-                                            <button type="button" class="join__bt">로그인</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th><label for="user-pwd">비밀번호</label></th>
-                                        <td><input type="password" name="user-pwd" id="user-pwd"></td>
-                                    </tr>
-                            </table>
-                            </form>
+               <ul class="control">
+                  <li class="show">로그인 / 비 로그인</li>
+                  <li>진료예약 조회</li>
+               </ul>
+               <ul class="contents">
+                  <li class="show">
+                     <div class="section__login">
+                        <form action="" method="post" class="login__id join">
+                           <table>
+                              <tr>
+                                 <th><label for="user-id">아이디</label></th>
+                                 <td><input type="text" name="user-id" id="user-id" /></td>
+                                 <td rowspan="2">
+                                    <button type="button" class="join__bt">로그인</button>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th><label for="user-pwd">비밀번호</label></th>
+                                 <td><input type="password" name="user-pwd" id="user-pwd" /></td>
+                              </tr>
+                           </table>
+                        </form>
 
-                            <form action="" method="post" class="login__name join">
-                                <table>
-                                    <tr>
-                                        <th><label for="user-name">성함</label></th>
-                                        <td><input type="text" name="user-name" id="user-name"></td>
-                                        <td rowspan="2">
-                                            <button type="button" class="join__bt">로그인</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th><label for="user-reg-num">등록번호</label></th>
-                                        <td><input type="password" name="user-reg-num" id="user-reg-num"></td>
-                                    </tr>
-                            </table>
-                            </form>
-                        </div>
-                    </li>
-                    <li>
-                        <button type="button" id="delete-bt">취소</button>
-                        <div class="section__appoint-delete">
-                            <form action="" class="appoint-delete__form">
-                                <table id="appoint-delete__table">
-                                    <tr>
-                                        <th>선택</th>
-                                        <th>번호</th>
-                                        <th>이름</th>
-                                        <th>진료과</th>
-                                        <th>담당의</th>
-                                        <th>진료실</th>
-                                        <th>예약일</th>
-                                        <th>예약시간</th>
-                                        <th>진행</th>
-                                        <th>서류 금액</th>
-                                    </tr>
-                                   
-                                    <tbody class="appoint-delete__body">
+                        <form action="" method="post" class="login__name join">
+                           <table>
+                              <tr>
+                                 <th><label for="user-name">성함</label></th>
+                                 <td><input type="text" name="user-name" id="user-name" /></td>
+                                 <td rowspan="2">
+                                    <button type="button" class="join__bt">로그인</button>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th><label for="user-reg-num">등록번호</label></th>
+                                 <td><input type="password" name="user-reg-num" id="user-reg-num" /></td>
+                              </tr>
+                           </table>
+                        </form>
+                     </div>
+                  </li>
+                  <li>
+                     <button type="button" id="delete-bt">취소</button>
+                     <div class="section__appoint-delete">
+                        <form action="" class="appoint-delete__form">
+                           <table id="appoint-delete__table">
+                              <tr>
+                                 <th>선택</th>
+                                 <th>번호</th>
+                                 <th>이름</th>
+                                 <th>진료과</th>
+                                 <th>담당의</th>
+                                 <th>진료실</th>
+                                 <th>예약일</th>
+                                 <th>예약시간</th>
+                                 <th>진행</th>
+                                 <th>서류 금액</th>
+                              </tr>
 
-                                    </tbody>
-
-                                </table>
-                            </form>
-                        </div>
-                    </li>
-                </ul>
+                              <tbody class="appoint-delete__body"></tbody>
+                           </table>
+                        </form>
+                     </div>
+                  </li>
+               </ul>
             </div>
-        </main>
+         </main>
 
-        <footer class="footer">
+         <footer class="footer">
             <!-- 공통 -->
-        <div class="maxwidth-1000">
-            <div class="footer-level01 font-Pret">
-                <ul>
-                    <li>
+            <div class="maxwidth-1000">
+               <div class="footer-level01 font-Pret">
+                  <ul>
+                     <li>
                         <a href="#">개인정보 취급방침</a>
-                    </li>
-                    <li>
+                     </li>
+                     <li>
                         <a href="#">이메일 무단수집 거부</a>
-                    </li>
-                    <li>
+                     </li>
+                     <li>
                         <a href="#">협력병원</a>
-                    </li>
-                    <li>
+                     </li>
+                     <li>
                         <a href="#">지정병원</a>
-                    </li>
-                </ul>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-level02 font-Pret">
+                  <h2><img src="Img/logo-220x100.png" alt="logo" /></h2>
+                  <div>
+                     <address>서울 서초구 서초대로 77길 55, 에이프로 스퀘어 3층(서초동)</address>
+                     <p>사업자 번호 | 995-35-7511 <span>대표자명 | 고태곤</span></p>
+                     <p>TEL.2022-1030, 832-2022-1107</p>
+                     <p>FAX. 933-5500-6520</p>
+                     <p>COPYRIGHT 2019. EZEN. All rights reserved.</p>
+                  </div>
+               </div>
             </div>
-            <div class="footer-level02 font-Pret">
-                <h2><img src="../Img/3/logo-220x100.png" alt="logo"></h2>
-                <div>
-                    <address>서울 서초구 서초대로 77길 55, 에이프로 스퀘어 3층(서초동)</address>
-                    <p>사업자 번호 | 995-35-7511 <span>대표자명 | 고태곤</span></p>
-                    <p>TEL.2022-1030, 832-2022-1107</p>
-                    <p>FAX. 933-5500-6520</p>
-                    <p>COPYRIGHT 2019. EZEN. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-        </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../js/4.conf_reserv/Medical_appointment.js"></script>
-    <script src="../js/3.reserv/reserv.js"></script>
-
-</body>
+         </footer>
+      </div>
+      <script src="../lib/jquery-3.6.1.min.js"></script>
+      <script src="../js/main.js"></script>
+   </body>
 </html>

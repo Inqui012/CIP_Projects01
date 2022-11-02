@@ -1,212 +1,213 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/3.reserv/reserv.css">
-</head>
-<body>
-    <header>
-        <!-- 공통 -->
-        <div class="maxwidth-1000">
-            <h1><a href="../index.html"><img src="../Img/3.reserv/logo-220x100.png" alt="logo"></a></h1>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../css/main.css" />
+   </head>
+   <body>
+      <header>
+         <!-- 공통 -->
+         <div class="maxwidth-1000">
+            <h1>
+               <a href="../index.html"><img src="Img/logo-220x100.png" alt="logo" /></a>
+            </h1>
             <nav class="main-menu font-sebang">
-                <ul>
-                    <li>
-                        <a href="intro.html">병원소개</a>
-                    </li>
-                    <li>
-                        <a href="reserv.html">진료예약</a>
-                    </li>
-                    <li>
-                        <a href="conf_reserv.html">예약조회</a>
-                    </li>
-                    <li>
-                        <a href="board.html">게시판</a>
-                    </li>
-                </ul>
+               <ul>
+                  <li>
+                     <a href="intro.html">병원소개</a>
+                  </li>
+                  <li>
+                     <a href="reserv.html">진료예약</a>
+                  </li>
+                  <li>
+                     <a href="conf_reserv.html">예약조회</a>
+                  </li>
+                  <li>
+                     <a href="board.html">게시판</a>
+                  </li>
+               </ul>
             </nav>
-            <div class="login font-Pret">
-                <a href="../index.html">LogIn</a><a href="../index.html">SignUp</a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="main maxwidth-1000 font-Pret">
+            <div class="login font-Pret"><a href="../index.html">LogIn</a><a href="../index.html">SignUp</a></div>
+         </div>
+      </header>
+      <main>
+         <div class="main maxwidth-1000 font-Pret">
             <div class="content-title">
-                <h2>진료예약</h2>
-                <p>생명을 조숭히, 환자를 먼저 생각하는 ***병원</p>
+               <h2>진료예약</h2>
+               <p>생명을 조숭히, 환자를 먼저 생각하는 ***병원</p>
             </div>
             <form action="">
-                <div>
-                    <table class="reserv-input">
-                        <caption>진료예약</caption>
-                        <tbody>
-                            <tr>
-                                <th>예약일시</th>
-                                <td colspan="3">
-                                    <!-- name, id명 의논필요 -->
-                                    <select name="select-month" id="select-month">
-                                        <!-- Js에서 작성 -->
-                                    </select>
-                                    <label for="select-month">월</label>
-                                    <select name="select-day" id="select-day">
-                                        <!-- Js에서 작성 -->
-                                    </select>
-                                    <label for="select-day">일</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="user-name">성명</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="user-name" id="user-name">
-                                    <span class="input-required">필수 입력 항목입니다.</span>
-                                    <span class="input-vail-check">입력 형식이 맞지 않습니다.</span>
-                                </td>
-                                <th>
-                                    <label for="user-tel">연락처</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="user-tel" id="user-tel" placeholder="ex) 000-0000-000">
-                                    <span class="input-required">필수 입력 항목입니다.</span>
-                                    <span class="input-vail-check">입력 형식이 맞지 않습니다.</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>방문경험</th>
-                                <td>
-                                    <input type="radio" name="visit" id="visit-no" value="no">
-                                    <label for="visit-no">이전에 방문한적 없음</label>
-                                </td>
-                                <td colspan="2">
-                                    <input type="radio" name="visit" id="visit-yes" value="yes">
-                                    <label for="visit-yes">이전에 방문한적 있음</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th rowspan="2">발급가능<br />서류</th>
-                                <td colspan="3">
-                                    <div>
-                                        <input type="checkbox" name="buy-doc" id="buy-doc-1" value="20000">
-                                        <label for="buy-doc-1">진단(소견)서</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="buy-doc" id="buy-doc-2" value="1000">
-                                        <label for="buy-doc-2">진료기록사본</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="buy-doc" id="buy-doc-3" value="0">
-                                        <label for="buy-doc-3">진료비세부내역서</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="buy-doc" id="buy-doc-4" value="10000">
-                                        <label for="buy-doc-4">CD 복사</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="buy-doc" id="buy-doc-5" value="100000">
-                                        <label for="buy-doc-5">상해진단서</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="buy-doc" id="buy-doc-6" value="20000">
-                                        <label for="buy-doc-6">병무용진단서</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <table class="doc-price">
-                                        <caption>서류발급 금액 안내</caption>
-                                        <tbody>
-                                            <tr>
-                                                <th>진단(소견)서</th>
-                                                <td>원본(국문, 영문 동일)</td>
-                                                <td>20,000 원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>진료기록사본</th>
-                                                <td>초진 기록지<br />검사 결과지<br />수술 기록지</td>
-                                                <td>
-                                                    1,000 원
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>진료비세부내역서</th>
-                                                <td></td>
-                                                <td>0 원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>CD 복사</th>
-                                                <td></td>
-                                                <td>10,000 원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>상해진단서</th>
-                                                <td>3주 미만</td>
-                                                <td>100,000 원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>병무용진단서</th>
-                                                <td></td>
-                                                <td>20,000 원</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <button type="reset" class="btn-01 font-Pret">돌아가기</button>
-                    <button type="submit" class="btn-02 font-Pret">예약하기</button>
-                </div>
+               <div>
+                  <table class="reserv-input">
+                     <caption>
+                        진료예약
+                     </caption>
+                     <tbody>
+                        <tr>
+                           <th>예약일시</th>
+                           <td colspan="3">
+                              <!-- name, id명 의논필요 -->
+                              <select name="select-month" id="select-month">
+                                 <!-- Js에서 작성 -->
+                              </select>
+                              <label for="select-month">월</label>
+                              <select name="select-day" id="select-day">
+                                 <!-- Js에서 작성 -->
+                              </select>
+                              <label for="select-day">일</label>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th>
+                              <label for="user-name">성명</label>
+                           </th>
+                           <td>
+                              <input type="text" name="user-name" id="user-name" />
+                              <span class="input-required">필수 입력 항목입니다.</span>
+                              <span class="input-vail-check">입력 형식이 맞지 않습니다.</span>
+                           </td>
+                           <th>
+                              <label for="user-tel">연락처</label>
+                           </th>
+                           <td>
+                              <input type="text" name="user-tel" id="user-tel" placeholder="ex) 000-0000-000" />
+                              <span class="input-required">필수 입력 항목입니다.</span>
+                              <span class="input-vail-check">입력 형식이 맞지 않습니다.</span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th>방문경험</th>
+                           <td>
+                              <input type="radio" name="visit" id="visit-no" value="no" />
+                              <label for="visit-no">이전에 방문한적 없음</label>
+                           </td>
+                           <td colspan="2">
+                              <input type="radio" name="visit" id="visit-yes" value="yes" />
+                              <label for="visit-yes">이전에 방문한적 있음</label>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th rowspan="2">발급가능<br />서류</th>
+                           <td colspan="3">
+                              <div>
+                                 <input type="checkbox" name="buy-doc" id="buy-doc-1" value="20000" />
+                                 <label for="buy-doc-1">진단(소견)서</label>
+                              </div>
+                              <div>
+                                 <input type="checkbox" name="buy-doc" id="buy-doc-2" value="1000" />
+                                 <label for="buy-doc-2">진료기록사본</label>
+                              </div>
+                              <div>
+                                 <input type="checkbox" name="buy-doc" id="buy-doc-3" value="0" />
+                                 <label for="buy-doc-3">진료비세부내역서</label>
+                              </div>
+                              <div>
+                                 <input type="checkbox" name="buy-doc" id="buy-doc-4" value="10000" />
+                                 <label for="buy-doc-4">CD 복사</label>
+                              </div>
+                              <div>
+                                 <input type="checkbox" name="buy-doc" id="buy-doc-5" value="100000" />
+                                 <label for="buy-doc-5">상해진단서</label>
+                              </div>
+                              <div>
+                                 <input type="checkbox" name="buy-doc" id="buy-doc-6" value="20000" />
+                                 <label for="buy-doc-6">병무용진단서</label>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">
+                              <table class="doc-price">
+                                 <caption>
+                                    서류발급 금액 안내
+                                 </caption>
+                                 <tbody>
+                                    <tr>
+                                       <th>진단(소견)서</th>
+                                       <td>원본(국문, 영문 동일)</td>
+                                       <td>20,000 원</td>
+                                    </tr>
+                                    <tr>
+                                       <th>진료기록사본</th>
+                                       <td>초진 기록지<br />검사 결과지<br />수술 기록지</td>
+                                       <td>1,000 원</td>
+                                    </tr>
+                                    <tr>
+                                       <th>진료비세부내역서</th>
+                                       <td></td>
+                                       <td>0 원</td>
+                                    </tr>
+                                    <tr>
+                                       <th>CD 복사</th>
+                                       <td></td>
+                                       <td>10,000 원</td>
+                                    </tr>
+                                    <tr>
+                                       <th>상해진단서</th>
+                                       <td>3주 미만</td>
+                                       <td>100,000 원</td>
+                                    </tr>
+                                    <tr>
+                                       <th>병무용진단서</th>
+                                       <td></td>
+                                       <td>20,000 원</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div>
+                  <button type="reset" class="btn-01 font-Pret">돌아가기</button>
+                  <button type="submit" class="btn-02 font-Pret">예약하기</button>
+               </div>
             </form>
-        </div>
-        <div class="reserv-complete">
+         </div>
+         <div class="reserv-complete">
             <div class="maxwidth-1000">
-                <i class="fa-solid fa-circle-check"></i>
-                <p>예약 되셨습니다.</p>
-                <span>5 초 후에 화면이 새로고침 됩니다.</span>
+               <i class="fa-solid fa-circle-check"></i>
+               <p>예약 되셨습니다.</p>
+               <span>5 초 후에 화면이 새로고침 됩니다.</span>
             </div>
-        </div>
-    </main>
-    <footer>
-        <!-- 공통 -->
-        <div class="maxwidth-1000">
+         </div>
+      </main>
+      <footer>
+         <!-- 공통 -->
+         <div class="maxwidth-1000">
             <div class="footer-level01 font-Pret">
-                <ul>
-                    <li>
-                        <a href="../index.html">개인정보 취급방침</a>
-                    </li>
-                    <li>
-                        <a href="../index.html">이메일 무단수집 거부</a>
-                    </li>
-                    <li>
-                        <a href="../index.html">협력병원</a>
-                    </li>
-                    <li>
-                        <a href="../index.html">지정병원</a>
-                    </li>
-                </ul>
+               <ul>
+                  <li>
+                     <a href="../index.html">개인정보 취급방침</a>
+                  </li>
+                  <li>
+                     <a href="../index.html">이메일 무단수집 거부</a>
+                  </li>
+                  <li>
+                     <a href="../index.html">협력병원</a>
+                  </li>
+                  <li>
+                     <a href="../index.html">지정병원</a>
+                  </li>
+               </ul>
             </div>
             <div class="footer-level02 font-Pret">
-                <h2><img src="../Img/3.reserv/logo-220x100.png" alt="logo"></h2>
-                <div>
-                    <address>서울 서초구 서초대로 77길 55, 에이프로 스퀘어 3층(서초동)</address>
-                    <p>사업자 번호 | 995-35-7511 <span>대표자명 | 고태곤</span></p>
-                    <p>TEL.2022-1030, 832-2022-1107</p>
-                    <p>FAX. 933-5500-6520</p>
-                    <p>COPYRIGHT 2019. EZEN. All rights reserved.</p>
-                </div>
+               <h2><img src="Img/logo-220x100.png" alt="logo" /></h2>
+               <div>
+                  <address>서울 서초구 서초대로 77길 55, 에이프로 스퀘어 3층(서초동)</address>
+                  <p>사업자 번호 | 995-35-7511 <span>대표자명 | 고태곤</span></p>
+                  <p>TEL.2022-1030, 832-2022-1107</p>
+                  <p>FAX. 933-5500-6520</p>
+                  <p>COPYRIGHT 2019. EZEN. All rights reserved.</p>
+               </div>
             </div>
-        </div>
-    </footer>
-    <script src="../js/jquery-3.6.1.min.js"></script>
-    <script src="../js/3.reserv/reserv.js"></script>
-</body>
+         </div>
+      </footer>
+      <script src="../js/jquery-3.6.1.min.js"></script>
+      <script src="../js/3.reserv/reserv.js"></script>
+   </body>
 </html>
