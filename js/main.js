@@ -154,15 +154,14 @@ function reservCompCount() {
 
 // conf_reserv
 // 로그인/비로그인 로그인 버튼 클릭 시 진료예약 조회 탭 이동
-$(document).ready(function () {
-   $('button.join__bt').click(function () {
-      $('div.section__tap ul.control li:nth-of-type(1)').css('border-bottom-style', 'solid')
-      $('div.section__tap ul.control li:nth-of-type(1)').removeClass('show')
-      $('div.section__tap ul.control li:nth-of-type(2)').addClass('show')
-      $('div.section__tap ul.control li:nth-of-type(2)').css('border-bottom-style', 'none')
-      $('div.section__tap ul.contents li:nth-of-type(1)').removeClass('show')
-      $('div.section__tap ul.contents li:nth-of-type(2)').eq($(this).index()).addClass('show')
-   })
+
+$('button.join__bt').click(function () {
+   $('div.section__tap ul.control li:nth-of-type(1)').css('border-bottom-style', 'solid')
+   $('div.section__tap ul.control li:nth-of-type(1)').removeClass('show')
+   $('div.section__tap ul.control li:nth-of-type(2)').addClass('show')
+   $('div.section__tap ul.control li:nth-of-type(2)').css('border-bottom-style', 'none')
+   $('div.section__tap ul.contents li:nth-of-type(1)').removeClass('show')
+   $('div.section__tap ul.contents li:nth-of-type(2)').eq($(this).index()).addClass('show')
 })
 
 // window.sessionStorage 예약 받는 Page에서 form이나 input으로 값 받아서 세션 스토리지 선언
