@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+.wrap {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.second {
+  height: 130px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  background-color: #d7eeff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.second__con {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.second .p1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.secpnd .p2 {
+  font-size: 15px;
+  font-weight: 300;
+}
+.container {
+  height: 1150px;
+  margin: 0 auto;
+}
+
+ul.tabs {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+ul.tabs li {
+  background: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul.tabs li.current {
+  background: #d7eeff;
+  color: rgb(0, 0, 0);
+}
+
+.tab-content {
+  display: none;
+  background: #d7eeff;
+  padding: 20px;
+  height: 1000px;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+.tab-content.current #tab-1 .date {
+  color: black;
+  line-height: 3;
+}
+
+.image_go {
+  width: 200px;
+  height: 200px;
+}
+
+div.map {
+  margin: 0 auto;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
