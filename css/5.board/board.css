@@ -1,0 +1,56 @@
+/* 폰트 */
+@font-face {
+  font-family: "SEBANG_Gothic_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  height: 950px;
+  margin: 0 auto;
+}
+
+ul.tabs {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+ul.tabs li {
+  background: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul.tabs li.current {
+  background: #d7eeff;
+  color: rgb(0, 0, 0);
+}
+
+.tab-content {
+  display: none;
+  background: #d7eeff;
+  padding: 20px;
+  height: 800px;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+.tab-content.current #tab-1 .date {
+  color: black;
+  line-height: 3;
+}
