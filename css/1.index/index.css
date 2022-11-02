@@ -121,7 +121,14 @@ section .con {
 .img-box .icon {
   box-sizing: border-box;
   margin: 10px;
+  padding: 10px;
   display: block;
+  font-size: 3rem;
+}
+
+.img-box p {
+  font-size: 1rem;
+  padding: 10px;
 }
 
 /* 예약 영역 */
