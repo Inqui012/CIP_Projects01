@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/5.board/board.css">
 </head>
 <body>
     <header>
@@ -35,8 +36,119 @@
     </header>
     <main>
         <!-- 각자 수정 -->
+        <thead>
+        <tbody>
+      <div class="community">
 
-        <div>a</div>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1">Q&A</li>
+          <li class="tab-link content" data-tab="tab-2">게시판</li>
+        </ul>
+
+        <div id="tab-1" class="tab-content current">
+            <details>
+              <summary>질문1</summary>
+              <span>답변1</span>
+            </details>
+            <details>
+              <summary>질문2</summary>
+              <span>답변2</span>
+            </details>
+            <details>
+              <summary>질문3</summary>
+              <span>답변3</span>
+            </details>
+            <details>
+              <summary>질문4</summary>
+              <span>답변4</span>
+            </details>
+            <details>
+              <summary>질문5</summary>
+              <span>답변5</span>
+            </details>
+        </div>
+
+        <div id="tab-2" cl ass="tab-content">
+          <div class="wrap maxwidth-1000">
+      <table class="board-list">
+        <caption>
+          <h1>자유게시판</h1>
+        </caption>
+        <!-- <thead> -->
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>작성일</th>
+            <th>조회수</th>
+          </tr>
+        <!-- </thead> -->
+        <!-- <tbody> -->
+          <tr>
+            <td>1</td>
+            <td class="title"><a href="./view.html">게시판 제목 입니다</a></td>
+            <td>김김김</td>
+            <td>2022.10.10</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="title"><a href="./view.html">게시판 제목 입니다</a></td>
+            <td>김김김</td>
+            <td>2022.10.10</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="title"><a href="./view.html">게시판 제목 입니다</a></td>
+            <td>김김김</td>
+            <td>2022.10.10</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="title"><a href="./view.html">게시판 제목 입니다</a></td>
+            <td>김김김</td>
+            <td>2022.10.10</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="title"><a href="./view.html">게시판 제목 입니다</a></td>
+            <td>김김김</td>
+            <td>2022.10.10</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td class="title"><a href="./view.html">게시판 제목 입니다</a></td>
+            <td>김김김</td>
+            <td>2022.10.10</td>
+            <td>6</td>
+          </tr>
+        <!-- </tbody> -->
+      </table>
+      <div class="bt_wrap bt_list">
+        <a href="write.html">글쓰기</a>
+      </div>
+      <div class="board_page">
+        <a href="#" class="bt first">&lt;&lt;</a>
+        <a href="#" class="bt prev">&lt;</a>
+        <a href="#" class="num on">1</a>
+        <a href="#" class="num">2</a>
+        <a href="#" class="num">3</a>
+        <a href="#" class="num">4</a>
+        <a href="#" class="num">5</a>
+        <a href="#" class="bt next">&gt;</a>
+        <a href="#" class="bt last">&gt;&gt;</a>
+      </div>
+    </div>
+        </div>
+      </div>
+      </tbody>
+      </thead>
+    
+      
     </main>
     <footer>
         <!-- 공통 -->
@@ -69,5 +181,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../js/5/board.js"></script>
 </body>
 </html>
