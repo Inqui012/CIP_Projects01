@@ -18,7 +18,7 @@
 .font-Pret {font-family: 'Pretendard-Regular';}
 
 /* 헤더 */
-header {height: 100px; width: 100%; position: fixed; top: 0; left: 0; background-color: #fff; box-shadow: 0 1px 5px 0px grey}
+header {height: 100px; width: 100%; position: fixed; top: 0; left: 0; background-color: #fff; box-shadow: 0 1px 5px 0px grey; z-index: 5;}
 header > div { height: 100%; display: flex; justify-content: space-between; align-items: center;}
 header > div h1 a img {width: 100%; height: 100%;}
 header > div nav {width: 50%;}
@@ -31,7 +31,7 @@ header > div > div a:hover::before {color: #000;}
 
 /* 메인공간 */
 main {margin-top: 100px; width: 100%;}
-main div.main {width: 80%; margin: 0 auto;}
+main div.section {width: 80%; margin: 0 auto;}
 
 /* 푸터 */
 footer {height: 300px; width: 100%; background-color: #0E2773;}
