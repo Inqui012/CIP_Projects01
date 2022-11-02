@@ -14,7 +14,7 @@
   font-style: normal;
 }
 
-.container {
+.community {
   height: 950px;
   margin: 0 auto;
 }
@@ -53,4 +53,100 @@ ul.tabs li.current {
 .tab-content.current #tab-1 .date {
   color: black;
   line-height: 3;
+}
+
+/* 게시판목록 css */
+
+.wrap {
+  width: px;
+  margin: 0 auto;
+}
+
+.board-list caption {
+  padding: 30px;
+}
+
+.board-list {
+  width: 100%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+}
+
+.board-list th,
+td {
+  border-spacing: 0;
+  border-bottom: 1px solid #444444;
+  padding: 11px;
+  text-align: center;
+}
+
+.board-list td.title > a:hover {
+  text-decoration: underline;
+}
+
+.bt_list {
+  text-align: right;
+}
+
+.board_page {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.board_page a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border-left: 0;
+  line-height: 32px;
+}
+
+.board_page a:hover {
+  text-decoration: underline;
+}
+
+.board_page a.bt {
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+}
+
+.board_page a.num {
+  font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+  border-color: #000;
+  background: #000;
+  color: #fff;
+}
+
+/* 게시판 버튼css */
+.bt_wrap {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0;
+}
+
+.bt_wrap a {
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.bt_wrap a:hover {
+  text-decoration: underline;
+}
+
+.bt_wrap a.on {
+  background: #000;
+  color: #fff;
 }
