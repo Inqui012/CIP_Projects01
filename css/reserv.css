@@ -1,4 +1,11 @@
 /* 기본색상 4B91F1 로 진행 eva에서 10단계 색조사용 */
+/* #01556a
+#0195ae
+#85c8de
+#b1daea
+#dae5ea
+색 괜찮은듯 */
+/* 청록색 #0195ae 회색 #dae5ea */
 body::-webkit-scrollbar {
    width: 8px;
 }
@@ -40,13 +47,13 @@ main div.main > form table.reserv-input > caption {
    display: none;
 }
 main div.main > form table.reserv-input > tbody > tr {
-   border-bottom: 1px solid rgba(14, 39, 115, 0.3);
+   border-bottom: 1px solid rgba(218, 229, 234, 1);
 }
 main div.main > form table.reserv-input > tbody > tr > th {
    padding: 30px;
    text-align: center;
    letter-spacing: 2px;
-   background-color: rgba(75, 145, 241, 0.4);
+   background-color: rgba(218, 229, 234, 0.5);
 }
 main div.main > form table.reserv-input > tbody > tr td {
    padding-left: 10px;
@@ -180,8 +187,8 @@ main div.reserv-complete div span {
    border-radius: 3px;
 }
 .btn-01 {
-   background-color: rgba(75, 145, 241, 0.2);
+   background-color: #dae5ea;
 }
 .btn-02 {
-   background-color: rgba(75, 145, 241, 0.7);
+   background-color: rgba(1, 149, 174, 0.5);
 }
