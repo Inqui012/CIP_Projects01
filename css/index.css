@@ -57,7 +57,7 @@ section .con {
 .banner-area::before {
   content: '';
   /* background-image: url(./indeximg/환자.jpg); */
-  background-color: #82a8fa;
+  background-color: rgb(130, 168, 250);
   background-size: cover;
   width: 100%;
   /* opacity: 50%; */
@@ -120,13 +120,13 @@ section .con {
   display: block;
   font-size: 3rem;
   border-radius: 40%;
-  background-color: #7aa9de;
+  background-color: rgb(122, 169, 222);
 }
 
 .icon:hover {
   /* margin: 10px;
   padding: 10px; */
-  background-color: #e1effc;
+  background-color: rgb(225, 239, 252);
   display: block;
   border-radius: 40%;
   overflow: hidden;
@@ -168,7 +168,7 @@ section .con {
 
 .reservation-list1 p {
   content: '';
-  background-color: #a5c8f8;
+  background-color: rgb(165, 200, 248);
   line-height: 100%;
   position: absolute;
   bottom: 10px;
@@ -203,7 +203,7 @@ section .con {
 
 .reservation-list3 p {
   content: '';
-  background-color: yellow;
+  background-color: rgb(255, 255, 0);
   position: absolute;
   bottom: 10px;
   width: 100%;
