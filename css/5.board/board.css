@@ -15,7 +15,6 @@
 }
 
 .community {
-  height: 950px;
   margin: 0 auto;
 }
 
@@ -24,6 +23,7 @@ ul.tabs {
   padding: 10px;
   list-style: none;
   text-align: center;
+  font-size: 2.1rem;
 }
 
 ul.tabs li {
@@ -35,19 +35,94 @@ ul.tabs li {
 }
 
 ul.tabs li.current {
-  background: #d7eeff;
+  display: inline-block;
+  background: lightskyblue;
   color: rgb(0, 0, 0);
+}
+
+/* 목차버튼 테스트 시작 */
+ul.tabs li {
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+ul.tabs li:hover::before {
+  width: 100%;
+}
+
+ul.tabs li::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: lightskyblue;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+ul.tabs li:hover::after {
+  width: 100%;
+}
+ul.tabs li:hover {
+  border: 1px solid #474748;
+  /* border-bottom: 1px solid #6098ff;
+  border-left: 1px solid #6098ff;
+  border-right: 1px solid #6098ff; */
+}
+
+/* 목차 버튼 테스트끝 */
+
+/* 질문에 마우스 올렸을때 */
+
+/* .q-color {
+  background-color: #6098ff;
+} */
+
+details summary:hover {
+  opacity: 1;
+  background-color: lightskyblue;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02),
+    opacity 0.4s;
+  transition: transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+}
+
+/* Q CSS */
+details summary {
+  font-size: 1.7rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  background: lightskyblue;
+  color: rgb(0, 0, 0);
+}
+
+/* A CSS */
+details p {
+  font-size: 1.6rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 140%;
 }
 
 .tab-content {
   display: none;
-  background: #d7eeff;
+  background: #ffffff;
   padding: 20px;
-  height: 800px;
 }
 
 .tab-content.current {
   display: inherit;
+  font-size: 2.1rem;
 }
 
 .tab-content.current #tab-1 .date {
@@ -55,22 +130,27 @@ ul.tabs li.current {
   line-height: 3;
 }
 
+.tab-content.current #tab-2 .date {
+  color: black;
+  line-height: 3;
+}
+
 /* 게시판목록 css */
 
 .wrap {
-  width: px;
+  width: 95%px;
   margin: 0 auto;
 }
 
 .board-list caption {
-  padding: 30px;
+  padding: 20px;
 }
 
 .board-list {
   width: 100%;
-  border-top: 1px solid #444444;
+  border-top: 1px solid #000000;
   border-collapse: collapse;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .board-list th,
@@ -122,6 +202,9 @@ td {
   border-color: #000;
   background: #000;
   color: #fff;
+}
+
+.search-left {
 }
 
 /* 게시판 버튼css */
