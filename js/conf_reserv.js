@@ -18,23 +18,23 @@ $(document).ready(function(){
 
 function getStorage(){
     if(!sessionStorage.getItem("appoint",$appoint_patient) === false){
-        let geust = JSON.parse(sessionStorage.getItem("appoint",$appoint_patient))
-        return geust;
+        let Geust = JSON.parse(sessionStorage.getItem("appoint",$appoint_patient))
+        return Geust;
     }
 }
 
 class Patient{    //환자 객체로 진료예약 조회 리스트 출력 value 용
-    constructor(partient){
-        this.num = partient[0]; //번호
-        this.name = partient[1]; //이름
-        this.department = partient[2]; //진료과
-        this.docter = partient[3]; //담당의
-        this.office = partient[4]; //진료실
-        this.reservation_date = partient[5];  // 예약일
-        this.reservation_time = partient[6]; // 예약시간
-        this.oder_status = partient[7]; // 예약 진행 상황
-        // this.reg_num = partient[8];    //등록번호(난수 생성으로 저장)
-        this.docuSum = partient[8];  // 신청한 서류 값
+    constructor(patient){
+        this.Num = patient[0]; //번호
+        this.Name = patient[1]; //이름
+        this.Department = patient[2]; //진료과
+        this.Docter = patient[3]; //담당의
+        this.Office = patient[4]; //진료실
+        this.Reservation_date = patient[5];  // 예약일
+        this.Reservation_time = patient[6]; // 예약시간
+        this.Oder_status = patient[7]; // 예약 진행 상황
+        // this.Reg_num = patient[8];    //등록번호(난수 생성으로 저장)
+        this.Docusum = patient[8];  // 신청한 서류 값
     }
 
 }
@@ -56,87 +56,62 @@ class Patient{    //환자 객체로 진료예약 조회 리스트 출력 value 
 
 let join_id__bt = document.querySelector(".login__id .join__bt")
 join_id__bt.addEventListener("click",function(){
-    let row = document.querySelector(".appoint-delete__body")
+    let Row = document.querySelector(".appoint-delete__body")
     // let patient = new Patient(1,'김범주','이빈후과','김범주','1 진료실', '2020. 11. 07', '14:30', '예약 완료');
     
     let patient = new Patient(getStorage());
     console.log(patient);
-    let temp = 
+    let Temp = 
     `
     <tr>
     <th>
     <input type="checkbox" name="appoint-delete-checkbox" class="check">
     </th>
-    <td>${patient.num}</td>
-    <td>${patient.name}</td>
-    <td>${patient.department}</td>
-    <td>${patient.docter}</td>
-    <td>${patient.office}</td>
-    <td>${patient.reservation_date}</td>
-    <td>${patient.reservation_time}</td>
-    <td class="oder">${patient.oder_status}</td>
-    <td>${patient.docuSum}원</td>
+    <td>${patient.Num}</td>
+    <td>${patient.Name}</td>
+    <td>${patient.Department}</td>
+    <td>${patient.Docter}</td>
+    <td>${patient.Office}</td>
+    <td>${patient.Reservation_date}</td>
+    <td>${patient.Reservation_time}</td>
+    <td class="oder">${patient.Oder_status}</td>
+    <td>${patient.Docusum}원</td>
     </tr>
     `;
-    $(row).append(temp);
+    $(Row).append(Temp);
 })
 
 
-// let join_id__bt = document.querySelector(".login__id .join__bt")
-// join_id__bt.addEventListener("click",function(){
-//     let row = document.querySelector(".appoint-delete__body")
-//     // let patient = new Patient(1,'김범주','이빈후과','김범주','1 진료실', '2020. 11. 07', '14:30', '예약 완료');
-//     let patient = new Patient()
-//     let temp = 
-//     `
-//     <tr>
-//     <th>
-//     <input type="checkbox" name="appoint-delete-checkbox" class="check">
-//     </th>
-//     <td>${patient.num}</td>
-//     <td>${patient.name}</td>
-//     <td>${patient.department}</td>
-//     <td>${patient.docter}</td>
-//     <td>${patient.office}</td>
-//     <td>${patient.reservation_date}</td>
-//     <td>${patient.reservation_time}</td>
-//     <td class="oder">${patient.oder_status}</td>
-//     </tr>
-//     `;
-//     $(row).append(temp);
-// })
-
-
-let join_name__bt = document.querySelector(".login__name .join__bt")
-join_name__bt.addEventListener("click",function(){
-    let row = document.querySelector(".appoint-delete__body")
+let joinNameBt = document.querySelector(".login__name .join__bt")
+joinNameBt.addEventListener("click",function(){
+    let Row = document.querySelector(".appoint-delete__body")
     let patient = new Patient(getStorage());
-    let temp = 
+    let Temp = 
     `
     <tr>
     <th>
     <input type="checkbox" name="appoint-delete-checkbox" class="check">
     </th>
-    <td>${patient.num}</td>
-    <td>${patient.name}</td>
-    <td>${patient.department}</td>
-    <td>${patient.docter}</td>
-    <td>${patient.office}</td>
-    <td>${patient.reservation_date}</td>
-    <td>${patient.reservation_time}</td>
-    <td class="oder">${patient.oder_status}</td>
-    <td>${patient.docuSum}원</td>
+    <td>${patient.Num}</td>
+    <td>${patient.Name}</td>
+    <td>${patient.Department}</td>
+    <td>${patient.Docter}</td>
+    <td>${patient.Office}</td>
+    <td>${patient.Reservation_date}</td>
+    <td>${patient.Reservation_time}</td>
+    <td class="oder">${patient.Oder_status}</td>
+    <td>${patient.Docusum}원</td>
     </tr>
     `;
-    $(row).append(temp);
+    $(Row).append(Temp);
 })
 
 
-const delete_bt = document.querySelector("#delete-bt")
-delete_bt.addEventListener("click",function(){
-    let row = document.querySelector(".appoint-delete__body")
-    let checkbox = document.querySelector(".check")
-    if($(checkbox).prop("checked")){
+const deleteBt = document.querySelector(".delete-bt")
+deleteBt.addEventListener("click",function(){
+    let Row = document.querySelector(".appoint-delete__body")
+    let Checkbox = document.querySelector(".check")
+    if($(Checkbox).prop("checked")){
        $('.oder:contains("예약 완료")').text("예약 취소");
     }
 })
