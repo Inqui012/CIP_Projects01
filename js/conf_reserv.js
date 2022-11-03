@@ -14,7 +14,7 @@ $(document).ready(function () {
 // sessionStorage.setItem("super", JSON.stringify(payload)); 예약 Page에서 data type을 JSON 문자형으로 파싱
 // let appoint_patient = [1,'김범주','이빈후과','김범주','1 진료실', '2020. 11. 07', '14:30', '예약 완료'];
 // sessionStorage.setItem("appoint", JSON.stringify(appoint_patient));
-
+let getStorageCNT = 0
 function getStorage() {
    if (!sessionStorage.getItem('appoint', $appoint_patient) === false) {
       let Geust = JSON.parse(sessionStorage.getItem('appoint', $appoint_patient))
