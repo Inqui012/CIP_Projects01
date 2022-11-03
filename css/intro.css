@@ -1,10 +1,12 @@
 @charset "utf-8";
 
+/* 초기화 */
 .wrap {
   margin: 0 auto;
   padding: 0;
 }
 
+/* 중간 이미지 */
 .second {
   height: 130px;
   margin: 0 auto;
@@ -33,6 +35,8 @@
   font-size: 15px;
   font-weight: 300;
 }
+
+/* 탭 */
 .container {
   height: 1150px;
   margin: 0 auto;
@@ -66,46 +70,126 @@ ul.tabs li.current {
 }
 
 .tab-content.current {
-  display: inherit;
+  display: block;
+}
+
+/* 병원소개 */
+.intro_box {
+  height: 900px;
+  padding: 10px;
+  background-color: #fff;
+  margin: 40px 30px;
+  text-align: center;
+}
+
+.image_intro {
+  height: 300px;
+  padding: 15px;
+}
+
+.intro_box_con {
+  text-align: left;
+}
+
+.intro_box_con strong {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.intro_box_con p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.intro_last {
+  text-align: right;
+}
+
+/* 진료안내 */
+.teach_go {
+  height: 300px;
+  line-height: 1.5;
+  padding: 20px;
+  background-color: #fff;
+  margin: 40px 30px;
+}
+
+.teach_go p {
+  font-size: 30px;
+  font-weight: 800;
+
+}
+
+.image_go {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-right: 30px;
+}
+
+.story_1 {
+  padding: 20px;
+  height: 300px;
+}
+
+.story_2 {
+  padding: 20px;
+  height: 300px;
+  width: 450px;
+  margin-left: 20px;
+}
+
+.teach_kwon {
+  height: 300px;
+  padding: 20px;
+  line-height: 1.5;
+  background-color: #fff;
+  margin: 50px 30px;
+}
+
+.teach_kwon p {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.image_gwon {
+  width: 300px;
+  height: 300px;
+  float: right;
+}
+
+.table_time {
+  margin: 30px;
+  background-color: #fff;
 }
 
 .time {
-  margin: 0 auto;
-  width: auto;
-  padding: 30px;
-  line-height: 2;
-  /*border: 1px solid black;
-  border-collapse: collapse;*/
-  background-color: rgb(255, 255, 255);
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  height: 80px;
+  text-align: center;
 }
 
 .time th,
 td {
   padding: 10px 20px;
+  margin: 20px;
 }
 
-#text_head {
+.text_head {
   color: black;
   font-size: 30px;
   text-align: center;
 }
 
-#text_foot {
+.text_foot {
   color: red;
   font-size: 20px;
   text-align: center;
 }
 
-.tab-content.current #tab-2 .date {
-  color: black;
-  line-height: 4;
-}
-
-.image_go {
-  width: 200px;
-  height: 200px;
-}
-
+/* 오시는길 */
 div.map {
   width: 800px;
   margin: 0 auto;
