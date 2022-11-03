@@ -69,9 +69,36 @@ ul.tabs li.current {
   display: inherit;
 }
 
-.tab-content.current #tab-1 .date {
+.time {
+  margin: 0 auto;
+  width: auto;
+  padding: 30px;
+  line-height: 2;
+  /*border: 1px solid black;
+  border-collapse: collapse;*/
+  background-color: rgb(255, 255, 255);
+}
+
+.time th,
+td {
+  padding: 10px 20px;
+}
+
+#text_head {
   color: black;
-  line-height: 3;
+  font-size: 30px;
+  text-align: center;
+}
+
+#text_foot {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+.tab-content.current #tab-2 .date {
+  color: black;
+  line-height: 4;
 }
 
 .image_go {
@@ -80,8 +107,10 @@ ul.tabs li.current {
 }
 
 div.map {
+  width: 800px;
   margin: 0 auto;
   height: 1000px;
   display: flex;
   justify-content: center;
+  background-color: #fff;
 }

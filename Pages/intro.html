@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>안내페이지</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../css/main.css">
+=======
+    <link rel="stylesheet" href="../연습/intro copy.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+>>>>>>> 11957bdc8cc0dda34ace32793a29e6b9f11dc197
   </head>
   <body>
     <header>
@@ -53,12 +59,26 @@
             <li class="tab-link" data-tab="tab-3">오시는 길</li>
           </ul>
           <div id="tab-1" class="tab-content current">
-            <h2>진료시간 안내</h2>
-            <ul>
-              <li>평일 (월~금) 오전 8시30분 ~ 오후 9시</li>
-              <li>주말 (토~일) 오전 11시00분 ~ 오후 6시</li>
-              <li>공휴일 휴무</li>
-            </ul>
+            <table class="time">
+              <thead>
+                <tr id="text_head">
+                  <th colspan="2">진료시간 안내</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>평일 (월~금) 오전 08시30분 ~ 오후 9시</td>
+                </tr>
+                <tr>
+                  <td>주말 (토~일) 오전 11시00분 ~ 오후 6시</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr id="text_foot">
+                  <th colspan="2">공휴일 휴무</th>
+              </tr>
+              </tfoot>
+            </table>
           </div>
           <div id="tab-2" class="tab-content">
             <img
@@ -109,37 +129,32 @@
                 <span class="story">한양대학교병원 인턴, 전공의</span>
               </li>
             </ul>
-            <ul>
-              <li>진료시간 안내</li>
-              <li>평일 (월~금) 오전 8시30분 ~ 오후 9시</li>
-              <li>주말 (토~일) 오전 11시00분 ~ 오후 6시</li>
-              <li>공휴일 휴무</li>
-            </ul>
           </div>
           <div id="tab-3" class="tab-content">
             <div class="map">
               <!-- 1. 약도 노드 -->
-              <div
+                <div
                 id="daumRoughmapContainer1667370635040"
                 class="root_daum_roughmap root_daum_roughmap_landing"
-              ></div>
+                ></div>
 
               <!-- 2. 설치 스크립트 -->
-              <script
+                <script
                 charset="UTF-8"
                 class="daum_roughmap_loader_script"
                 src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-              ></script>
+                ></script>
 
               <!-- 3. 실행 스크립트 -->
-              <script charset="UTF-8">
+                <script charset="UTF-8">
                 new daum.roughmap.Lander({
                   timestamp: "1667370635040",
                   key: "2ccoa",
                   mapWidth: "700",
                   mapHeight: "400",
                 }).render();
-              </script>
+                </script>
+            </div>
         </div>
       </div>
     </main>
@@ -176,7 +191,16 @@
         </div>
       </div>
     </footer>
+<<<<<<< HEAD
       <script src="../lib/jquery-3.6.1.js"></script>
     <script src="../js/main.js"></script>
+=======
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../연습/intro copy.js"></script>
+>>>>>>> 11957bdc8cc0dda34ace32793a29e6b9f11dc197
   </body>
 </html>
