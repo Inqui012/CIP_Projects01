@@ -24,21 +24,6 @@ section .con {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* height: 100%; */
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
 .swiper-slide.slide1 {
@@ -88,7 +73,7 @@ section .con {
   padding-right: 50px;
 }
 
-.banner-area .banner-left h1 {
+.banner-area .banner-left p {
   font-size: 40px;
   /* text-align: left; */
   display: flex;
