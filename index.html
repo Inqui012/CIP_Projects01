@@ -1,195 +1,189 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> <!-- Swiper CSS -->
-    <link rel="stylesheet" href="lib/fontawesome-free-6.2.0-web/css/all.min.css">            <!-- Fontawsome CSS -->
-    <link rel="stylesheet" href="css/main.css">                                               <!-- 공통 CSS -->  
-</head>
-<body>
-    <header>
-        <!-- 공통 -->
-        <div class="maxwidth-1000">
-            <h1><a href="index.html"><img src="Img/logo-220x100.png" alt="logo"></a></h1>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="lib/fontawesome-free-6.2.0-web/css/all.min.css" />
+      <!-- Fontawsome CSS -->
+      <link rel="stylesheet" href="css/main.css" />
+      <!-- 공통 CSS -->
+   </head>
+   <body>
+      <header>
+         <!-- 공통 -->
+         <div class="maxwidth-1000">
+            <h1>
+               <a href="index.html"><img src="Img/logo-220x100.png" alt="logo" /></a>
+            </h1>
             <nav class="main-menu font-sebang">
-                <ul>
-                    <li>
-                        <a href="Pages/intro.html">병원소개</a>
-                    </li>
-                    <li>
-                        <a href="Pages/reserv.html">진료예약</a>
-                    </li>
-                    <li>
-                        <a href="Pages/conf_reserv.html">예약조회</a>
-                    </li>
-                    <li>
-                        <a href="Pages/board.html">게시판</a>
-                    </li>
-                </ul>
+               <ul>
+                  <li>
+                     <a href="Pages/intro.html">병원소개</a>
+                  </li>
+                  <li>
+                     <a href="Pages/reserv.html">진료예약</a>
+                  </li>
+                  <li>
+                     <a href="Pages/conf_reserv.html">예약조회</a>
+                  </li>
+                  <li>
+                     <a href="Pages/board.html">게시판</a>
+                  </li>
+               </ul>
             </nav>
-            <div class="login font-Pret">
-                <a href="#">LogIn</a><a href="#">SignUp</a>
-            </div>
-        </div>
-    </header>
-    <main class="wrap">
-        <section class="slide-section maxwidth-1000">
+            <div class="login font-Pret"><a href="#">LogIn</a><a href="#">SignUp</a></div>
+         </div>
+      </header>
+      <main class="wrap">
+         <div class="slide-section">
             <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide slide1"></div>
                   <div class="swiper-slide slide2"></div>
                   <div class="swiper-slide slide3"></div>
                   ...
-                </div>
-                <!-- pagination -->
-                <div class="swiper-pagination"></div>
-              
-                <!-- navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              
-                <!-- scrollbar -->
-                <div class="swiper-scrollbar"></div>
-              </div>
-        </section>
-        <section class="banner-area maxwidth-1000">
+               </div>
+               <!-- pagination -->
+               <div class="swiper-pagination"></div>
+
+               <!-- navigation buttons -->
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+
+               <!-- scrollbar -->
+               <div class="swiper-scrollbar"></div>
+            </div>
+         </div>
+         <div class="banner-area">
             <!-- <div class="banner-area-bgimg"><img src="./Img/2/injection.jpg" alt="banner-img"></div> -->
             <div class="banner-left">
-                <div class="banner-phone">
-                    <h1>전화번호 : 1544-0000</h1>
-                </div>
+               <div class="banner-phone">
+                  <p>전화번호 : 1544-0000</p>
+               </div>
             </div>
             <div class="banner-right">
-                <div class="banner-info">
-                <p>진료시간 : 평일 09:00 - 20:00</p><br>
-                <p>토요일 : 09:00 - 16:00</p><br>
-                <p>점심시간 : 오후1시 - 오후2시</p><br>
-                <p>일요일 및 공휴일 휴진</p>
-                </div>
+               <div class="banner-info">
+                  <p>진료시간 : 평일 09:00 - 20:00</p>
+                  <br />
+                  <p>토요일 : 09:00 - 16:00</p>
+                  <br />
+                  <p>점심시간 : 오후1시 - 오후2시</p>
+                  <br />
+                  <p>일요일 및 공휴일 휴진</p>
+               </div>
             </div>
-            </div>
-        </section>
-        <section class="icon-area maxwidth-1000">
+         </div>
+         <div class="icon-area maxwidth-1000">
             <div class="img-box">
-                <div class="icon">
-                    <a href="#" target="_blank">
-                    <i class="fa-solid fa-car-burst"></i>
-                    <p>교통사고 관련</p>    
-                    </a>
-                    
-                </div>
-                <div class="icon">
-                    <a href="#" target="_blank">
-                        <i class="fa-solid fa-crutch"></i>
-                    <p>후유증상담</p>
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="#" target="_blank">
-                    <i class="fa-solid fa-circle-radiation"></i>
-                    <p>방사선촬영</p>
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="#" target="_blank">
-                    <i class="fa-solid fa-stethoscope"></i>
-                    <p>문진표 작성</p>
-                    </a>
-                </div class="icon">
-                <div class="icon">
-                    <a href="#" target="_blank">
-                    <i class="fa-solid fa-bed-pulse"></i>
-                    <p>입원안내</p>
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="#" target="_blank">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <p>오시는길</p>
-                    </a>
-                </div>
-                
-                <!-- <a href="#">
+               <div class="icon">
+                  <a href="#" target="_blank">
+                     <i class="fa-solid fa-car-burst"></i>
+                     <p>교통사고</p>
+                  </a>
+               </div>
+               <div class="icon">
+                  <a href="#" target="_blank">
+                     <i class="fa-solid fa-crutch"></i>
+                     <p>후유증상담</p>
+                  </a>
+               </div>
+               <div class="icon">
+                  <a href="#" target="_blank">
+                     <i class="fa-solid fa-circle-radiation"></i>
+                     <p>방사선촬영</p>
+                  </a>
+               </div>
+               <div class="icon">
+                  <a href="#" target="_blank">
+                     <i class="fa-solid fa-stethoscope"></i>
+                     <p>문진표작성</p>
+                  </a>
+               </div>
+               <div class="icon">
+                  <a href="#" target="_blank">
+                     <i class="fa-solid fa-bed-pulse"></i>
+                     <p>입원안내</p>
+                  </a>
+               </div>
+               <div class="icon">
+                  <a href="#" target="_blank">
+                     <i class="fa-solid fa-map-location-dot"></i>
+                     <p>오시는길</p>
+                  </a>
+               </div>
+
+               <!-- <a href="#">
                     <img src="" alt="">
                     <span></span>
                 </a> -->
             </div>
-            
-        </section>
-        <section class="reservation-area maxwidth-1000">
-            <a href="#" target="_blank">
-                <div class="reservation-box1">
-                    <div class="reservation-list1"><p>병원진료예약</p></div>
-                </div>
+         </div>
+         <div class="reservation-area maxwidth-1000">
+            <a href="#" target="_blank" class="reserve">
+               <div class="reservation-box1">
+                  <div class="reservation-list1"><p>병원진료예약</p></div>
+               </div>
+            </a>
+            <a href="#" target="_blank" class="reserve">
+               <div class="reservation-box2">
+                  <div class="reservation-list2"><p>예약확인</p></div>
+               </div>
+            </a>
+            <a href="#" target="_blank" class="reserve">
+               <div class="reservation-box3">
+                  <div class="reservation-list3"><p>카카오톡 상담하기</p></div>
+               </div>
             </a>
             <a href="#" target="_blank">
-                <div class="reservation-box2">
-                    <div class="reservation-list2"><p>예약확인</p></div>
-                </div>
+               <div class="reservation-box4">
+                  <div class="reservation-list4"><p>증명서 발급</p></div>
+               </div>
             </a>
-            <a href="#" target="_blank">
-                <div class="reservation-box3">
-                    <div class="reservation-list3"><p>카카오톡 상담하기</p></div>
-                </div>
-            </a>
-            <a href="#" target="_blank">
-                <div class="reservation-box4">
-                    <div class="reservation-list4"><p>증명서 발급</p></div>
-                </div>
-            </a>
-        </section>
-        <!-- ↓여긴 모르겠다... -->
-        <!-- <section class="maxwidth-1000"> 
-            <form class="miniboard-area">
-                <table>
-                    <ul>1</ul>
-                    <ul>2</ul>
-                    <ul>3</ul>
-                    <ul>4</ul>
-                </table>
-            </form>
-        </section> -->
-    </main>
-    <footer>
-        <!-- 공통 -->
-        <div class="maxwidth-1000">
+         </div>
+      </main>
+      <footer>
+         <!-- 공통 -->
+         <div class="maxwidth-1000">
             <div class="footer-level01 font-Pret">
-                <ul>
-                    <li>
-                        <a href="#">개인정보 취급방침</a>
-                    </li>
-                    <li>
-                        <a href="#">이메일 무단수집 거부</a>
-                    </li>
-                    <li>
-                        <a href="#">협력병원</a>
-                    </li>
-                    <li>
-                        <a href="#">지정병원</a>
-                    </li>
-                </ul>
+               <ul>
+                  <li>
+                     <a href="#">개인정보 취급방침</a>
+                  </li>
+                  <li>
+                     <a href="#">이메일 무단수집 거부</a>
+                  </li>
+                  <li>
+                     <a href="#">협력병원</a>
+                  </li>
+                  <li>
+                     <a href="#">지정병원</a>
+                  </li>
+               </ul>
             </div>
             <div class="footer-level02 font-Pret">
-                <h2><img src="Img/logo-220x100.png" alt="logo"></h2>
-                <div>
-                    <address>서울 서초구 서초대로 77길 55, 에이프로 스퀘어 3층(서초동)</address>
-                    <p>사업자 번호 | 995-35-7511 <span>대표자명 | 고태곤</span></p>
-                    <p>TEL.2022-1030, 832-2022-1107</p>
-                    <p>FAX. 933-5500-6520</p>
-                    <p>COPYRIGHT 2019. EZEN. All rights reserved.</p>
-                </div>
+               <h2><img src="Img/logo-220x100.png" alt="logo" /></h2>
+               <div>
+                  <address>서울 서초구 서초대로 77길 55, 에이프로 스퀘어 3층(서초동)</address>
+                  <p>사업자 번호 | 995-35-7511 <span>대표자명 | 고태곤</span></p>
+                  <p>TEL.2022-1030, 832-2022-1107</p>
+                  <p>FAX. 933-5500-6520</p>
+                  <p>COPYRIGHT 2019. EZEN. All rights reserved.</p>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!-- <script src="./js/2/swiper.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  <!-- Swiper 용 script -->
-    <script src="js/main.js"></script>  
-    <script src="js/mainSlide.js"></script>                                             <!-- fontawsome 용 script -->
-    <script src="../lib/jquery-3.6.1.js"></script>
-</body>
+         </div>
+      </footer>
+      <!-- <script src="./js/2/swiper.min.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <!-- Swiper 용 script -->
+      <script src="js/main.js"></script>
+      <script src="js/mainSlide.js"></script>
+      <!-- fontawsome 용 script -->
+      <script src="../lib/jquery-3.6.1.js"></script>
+   </body>
 </html>
