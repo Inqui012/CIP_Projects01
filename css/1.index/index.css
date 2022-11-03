@@ -1,7 +1,6 @@
 @import url(../reset.css);
 @import url(../common.css);
 @import url(../main.css);
-@import url(./all.css);
 
 section .con {
   margin: 0 auto;
@@ -240,4 +239,8 @@ section .con {
   position: absolute;
   bottom: 10px;
   width: 100%;
+}
+
+.opacity40 {
+  opacity: 0.6;
 }
