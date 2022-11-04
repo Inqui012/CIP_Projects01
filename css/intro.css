@@ -192,7 +192,7 @@ td {
 div.map {
   width: 800px;
   margin: 0 auto;
-  height: 980px;
+  height: 1000px;
   display: flex;
   justify-content: center;
   background-color: #fff;
