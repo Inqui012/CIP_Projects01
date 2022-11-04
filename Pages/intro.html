@@ -290,6 +290,9 @@
             </div>
             <div class="table_time">
               <table class="time">
+                <caption>
+                  진료시간표
+                </caption>
                 <thead>
                   <tr class="text_head">
                     <th>진료시간 안내</th>
@@ -297,15 +300,15 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>평일 (월~금) 오전 08시30분 ~ 오후 9시</td>
+                    <td>평일 (월~금) 오전 09시00분 ~ 오후 20시00분</td>
                   </tr>
                   <tr>
-                    <td>주말 (토~일) 오전 11시00분 ~ 오후 6시</td>
+                    <td>토요일 오전 09시00분 ~ 오후 16시00분</td>
                   </tr>
                 </tbody>
                 <tfoot>
                   <tr class="text_foot">
-                    <th>공휴일 휴무</th>
+                    <th>일요일 및 공휴일 휴진</th>
                   </tr>
                 </tfoot>
               </table>
@@ -321,7 +324,6 @@
 
               <!-- 2. 설치 스크립트 -->
               <script
-                charset="UTF-8"
                 class="daum_roughmap_loader_script"
                 src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
               ></script>
@@ -329,10 +331,10 @@
               <!-- 3. 실행 스크립트 -->
               <script>
                 new daum.roughmap.Lander({
-                  timestamp: '1667370635040',
-                  key: '2ccoa',
-                  mapWidth: '700',
-                  mapHeight: '400',
+                  timestamp: "1667370635040",
+                  key: "2ccoa",
+                  mapWidth: "700",
+                  mapHeight: "340",
                 }).render();
               </script>
             </div>

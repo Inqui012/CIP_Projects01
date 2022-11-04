@@ -117,7 +117,6 @@ ul.tabs li.current {
 .teach_go p {
   font-size: 30px;
   font-weight: 800;
-
 }
 
 .image_go {
@@ -169,6 +168,10 @@ ul.tabs li.current {
   background-color: #fff;
   height: 80px;
   text-align: center;
+}
+
+caption {
+  display: none;
 }
 
 .time th,

@@ -68,18 +68,11 @@ ul.tabs li:hover::after {
 }
 ul.tabs li:hover {
   border: 1px solid #474748;
-  /* border-bottom: 1px solid #6098ff;
-  border-left: 1px solid #6098ff;
-  border-right: 1px solid #6098ff; */
 }
 
 /* 목차 버튼 테스트끝 */
 
 /* 질문에 마우스 올렸을때 */
-
-/* .q-color {
-  background-color: #6098ff;
-} */
 
 details summary:hover {
   opacity: 1;
@@ -142,6 +135,26 @@ details p {
   margin: 0 auto;
 }
 
+.search-top {
+  text-align: center;
+}
+
+.search-left {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.search-right {
+  text-align: right;
+  padding: 20px;
+  font-size: 5rem;
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 60%;
+  text-align: center;
+}
 .board-list caption {
   padding: 20px;
 }
