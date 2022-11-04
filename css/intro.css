@@ -170,6 +170,10 @@ ul.tabs li.current {
   text-align: center;
 }
 
+caption {
+  display: none;
+}
+
 .time th,
 td {
   padding: 10px 20px;
