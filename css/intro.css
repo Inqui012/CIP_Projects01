@@ -117,7 +117,6 @@ ul.tabs li.current {
 .teach_go p {
   font-size: 30px;
   font-weight: 800;
-
 }
 
 .image_go {
@@ -193,7 +192,7 @@ td {
 div.map {
   width: 800px;
   margin: 0 auto;
-  height: 1000px;
+  height: 980px;
   display: flex;
   justify-content: center;
   background-color: #fff;
