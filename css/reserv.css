@@ -1,22 +1,3 @@
-/* 기본색상 4B91F1 로 진행 eva에서 10단계 색조사용 */
-/* #01556a
-#0195ae
-#85c8de
-#b1daea
-#dae5ea
-색 괜찮은듯 */
-/* 청록색 #0195ae 회색 #dae5ea */
-body::-webkit-scrollbar {
-   width: 8px;
-}
-body::-webkit-scrollbar-thumb {
-   height: 30%;
-   background: rgba(75, 145, 241, 0.7);
-   border-radius: 10px;
-}
-body::-webkit-scrollbar-track {
-   background: rgba(75, 145, 241, 0.1);
-}
 main div.main > div {
    border-bottom: 1px solid gray;
    margin-top: 200px;
@@ -37,12 +18,6 @@ main div.main > form table.reserv-input {
    margin: 0 auto;
    width: 95%;
 }
-
-/* table test */
-/* main div.main > form table.reserv-input > tbody tr {border: 1px solid black;}
-main div.main > form table.reserv-input > tbody tr td {border: 1px solid black;}
-main div.main > form table.reserv-input > tbody tr th {border: 1px solid black;} */
-
 main div.main > form table.reserv-input > caption {
    display: none;
 }
@@ -94,7 +69,6 @@ main div.main > form table.reserv-input > tbody tr:first-child td label {
 main div.main > form table.reserv-input > tbody tr:not(:first-child) td label {
    cursor: pointer;
 }
-
 main div.main > form table.reserv-input > tbody > tr:nth-child(4) td div {
    width: 30%;
    float: left;
@@ -130,7 +104,6 @@ main div.main > form table.reserv-input > tbody > tr:last-of-type td table.doc-p
 main div.main > form table.reserv-input > tbody > tr:last-of-type td table.doc-price > tbody tr td {
    padding: 5px;
 }
-
 main div.main > form > div:nth-child(2) {
    text-align: center;
    margin: 30px 0;
@@ -138,7 +111,6 @@ main div.main > form > div:nth-child(2) {
 main div.main > form > div:nth-child(2) button[type='submit'] {
    margin-left: 100px;
 }
-
 /* 확인페이지 팝업으로 */
 main div.reserv-complete {
    max-width: 100vw;
@@ -160,7 +132,7 @@ main div.reserv-complete div {
 }
 main div.reserv-complete div i {
    font-size: 20rem;
-   color: #4b91f1;
+   color: rgb(75, 145, 241);
 }
 main div.reserv-complete div p {
    font-size: 2.5rem;
@@ -172,12 +144,7 @@ main div.reserv-complete div span {
    color: #fff;
    margin-top: 10px;
 }
-
-/* select test */
-
-/* 버튼 디자인 의논필요? */
-.btn-01,
-.btn-02 {
+.btn {
    border: none;
    padding: 20px 35px;
    font-weight: 900;
@@ -185,10 +152,17 @@ main div.reserv-complete div span {
    letter-spacing: 3px;
    cursor: pointer;
    border-radius: 3px;
+   background-color: rgba(3, 98, 128, 1);
+   color: #fff;
 }
-.btn-01 {
-   background-color: #dae5ea;
+.btn.btn-01 {
+   background-color: rgba(218, 229, 234, 1);
+   color: #000;
 }
-.btn-02 {
-   background-color: rgba(1, 149, 174, 0.5);
+.btn.btn-01:hover {
+   background-color: rgba(218, 229, 234, 0.8);
+   color: #000;
+}
+.btn:hover {
+   background-color: rgba(3, 98, 128, 0.8);
 }
