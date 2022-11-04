@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -59,6 +60,7 @@
                 <div class="section__login">
                   <form class="login__id join">
                     <table>
+                      <caption></caption>
                       <tr>
                         <th><label for="user-id">아이디</label></th>
                         <td>
@@ -88,6 +90,7 @@
                   </form>
                   <form class="login__name join">
                     <table>
+                      <caption></caption>
                       <tr>
                         <th><label for="user-name">성함</label></th>
                         <td>
@@ -122,6 +125,7 @@
                 <div class="section__appoint-delete">
                   <form class="appoint-delete__form">
                     <table id="appoint-delete__table">
+                      <caption></caption>
                       <tr>
                         <th>선택</th>
                         <th>번호</th>
@@ -185,4 +189,250 @@
       <script src="../js/3.reserv/reserv.js"></script>
     </div>
   </body>
+  =======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>진료예약 조회 / 취소</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../Img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../Img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../Img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../Img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../Img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../Img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../Img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../Img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../Img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../Img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../Img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../Img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../Img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../Img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../Img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/conf_reserv.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="maxwidth-1000">
+        <h1>
+          <a href="../index.html"
+            ><img src="../Img/logo-220x100.png" alt="logo"
+          /></a>
+        </h1>
+        <nav class="main-menu font-sebang">
+          <ul>
+            <li>
+              <a href="./intro.html">병원소개</a>
+            </li>
+            <li>
+              <a href="./reserv.html">진료예약</a>
+            </li>
+            <li>
+              <a href="./conf_reserv.html">예약조회</a>
+            </li>
+            <li>
+              <a href="./board.html">게시판</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="login font-Pret">
+          <a href="#">LogIn</a><a href="#">SignUp</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section font-Pret maxwidth-1000">
+        <div class="section__title">
+          <p>진료예약 조회 / 취소</p>
+          <p>생명을 소중히, 환자를 먼저 생각 하는 세브란스 병원</p>
+        </div>
+        <div class="section__tap-border-buttom"></div>
+        <div class="section__tap">
+          <ul class="control">
+            <li class="show">로그인 / 비 로그인</li>
+            <li>진료예약 조회</li>
+          </ul>
+          <ul class="contents">
+            <li class="show">
+              <div class="section__login">
+                <form action="" method="post" class="login__id join">
+                  <table>
+                    <caption></caption>
+                    <tr>
+                      <th><label for="user-id">아이디</label></th>
+                      <td>
+                        <input type="text" name="user-id" class="user-id" />
+                      </td>
+                      <td rowspan="2">
+                        <button type="button" class="join__bt">로그인</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><label for="user-pwd">비밀번호</label></th>
+                      <td>
+                        <input
+                          type="password"
+                          name="user-pwd"
+                          class="user-pwd"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+                <form action="" method="post" class="login__name join">
+                  <table>
+                    <caption></caption>
+                    <tr>
+                      <th><label for="user-name">성함</label></th>
+                      <td>
+                        <input type="text" name="user-name" class="user-name" />
+                      </td>
+                      <td rowspan="2">
+                        <button type="button" class="join__bt">로그인</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><label for="user-reg-num">등록번호</label></th>
+                      <td>
+                        <input
+                          type="password"
+                          name="user-reg-num"
+                          class="user-reg-num"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="delete-bt">취소</button>
+              <div class="section__appoint-delete">
+                <form action="" class="appoint-delete__form">
+                  <table id="appoint-delete__table">
+                    <caption></caption>
+                    <tr>
+                      <th>선택</th>
+                      <th>번호</th>
+                      <th>이름</th>
+                      <th>진료과</th>
+                      <th>담당의</th>
+                      <th>진료실</th>
+                      <th>예약일</th>
+                      <th>예약시간</th>
+                      <th>진행</th>
+                      <th>서류 금액</th>
+                    </tr>
+                    <tbody class="appoint-delete__body"></tbody>
+                  </table>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <!-- 공통 -->
+      <div class="maxwidth-1000">
+        <div class="footer-level01 font-Pret">
+          <ul>
+            <li>
+              <a href="#">개인정보 취급방침</a>
+            </li>
+            <li>
+              <a href="#">이메일 무단수집 거부</a>
+            </li>
+            <li>
+              <a href="#">협력병원</a>
+            </li>
+            <li>
+              <a href="#">지정병원</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-level02 font-Pret">
+          <h2><img src="Img/logo-220x100.png" alt="logo" /></h2>
+          <div>
+            <address>
+              서울 서초구 서초대로 77길 55, 에이프로 스퀘어 3층(서초동)
+            </address>
+            <p>사업자 번호 | 995-35-7511 <span>대표자명 | 고태곤</span></p>
+            <p>TEL.2022-1030, 832-2022-1107</p>
+            <p>FAX. 933-5500-6520</p>
+            <p>COPYRIGHT 2019. EZEN. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../lib/jquery-3.6.1.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/conf_reserv.js"></script>
+  </body>
+  >>>>>>> c351c3731cf30b40ee021b369300186213638b84
 </html>

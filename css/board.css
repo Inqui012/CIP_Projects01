@@ -1,0 +1,248 @@
+/* 폰트 */
+@font-face {
+  font-family: "SEBANG_Gothic_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.community {
+  margin: 0 auto;
+}
+
+ul.tabs {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+ul.tabs li {
+  background: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul.tabs li.current {
+  display: inline-block;
+  background: lightskyblue;
+  color: rgb(0, 0, 0);
+}
+
+/* 목차버튼 테스트 시작 */
+ul.tabs li {
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+ul.tabs li:hover::before {
+  width: 100%;
+}
+
+ul.tabs li::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 0%;
+  height: 1px;
+  background: lightskyblue;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+ul.tabs li:hover::after {
+  width: 100%;
+}
+ul.tabs li:hover {
+  border: 1px solid #474748;
+}
+
+/* 목차 버튼 테스트끝 */
+
+/* 질문에 마우스 올렸을때 */
+
+details summary:hover {
+  opacity: 1;
+  background-color: lightskyblue;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02),
+    opacity 0.4s;
+  transition: transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+}
+
+/* Q CSS */
+details summary {
+  font-size: 1.7rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  background: lightskyblue;
+  color: rgb(0, 0, 0);
+}
+
+/* A CSS */
+details p {
+  font-size: 1.6rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 140%;
+}
+
+.tab-content {
+  display: none;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.tab-content.current {
+  display: inherit;
+  font-size: 2.1rem;
+}
+
+.tab-content.current #tab-1 .date {
+  color: black;
+  line-height: 3;
+}
+
+.tab-content.current #tab-2 .date {
+  color: black;
+  line-height: 3;
+}
+
+/* 게시판목록 css */
+
+.wrap {
+  width: 95%px;
+  margin: 0 auto;
+}
+
+.search-top {
+  text-align: center;
+}
+
+.search-left {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.search-right {
+  text-align: right;
+  padding: 20px;
+  font-size: 5rem;
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 60%;
+  text-align: center;
+}
+.board-list caption {
+  padding: 20px;
+}
+
+.board-list {
+  width: 100%;
+  border-top: 1px solid #000000;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+
+.board-list th,
+td {
+  border-spacing: 0;
+  border-bottom: 1px solid #444444;
+  padding: 11px;
+  text-align: center;
+}
+
+.board-list td.title > a:hover {
+  text-decoration: underline;
+}
+
+.bt_list {
+  text-align: right;
+}
+
+.board_page {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.board_page a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border-left: 0;
+  line-height: 32px;
+}
+
+.board_page a:hover {
+  text-decoration: underline;
+}
+
+.board_page a.bt {
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+}
+
+.board_page a.num {
+  font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+  border-color: #000;
+  background: #000;
+  color: #fff;
+}
+
+.search-left {
+}
+
+/* 게시판 버튼css */
+.bt_wrap {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0;
+}
+
+.bt_wrap a {
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.bt_wrap a:hover {
+  text-decoration: underline;
+}
+
+.bt_wrap a.on {
+  background: #000;
+  color: #fff;
+}
