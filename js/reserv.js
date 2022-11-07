@@ -130,7 +130,7 @@ function reservCompCount() {
    let count = 5
    setInterval(() => {
       count--
-      $('main div.reserv-complete div span').replaceWith(`<span>${count} 초 후에 화면이 새로고침 됩니다.</span>`)
+      $('main div.reserv-complete div span').replaceWith(`<span>${count} 초 후에 메인페이지로 넘어갑니다.</span>`)
       if (count == 0) {
          location.replace('https://inqui012.github.io/CIP_Projects01/index.html')
       }
