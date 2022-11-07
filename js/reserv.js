@@ -49,7 +49,6 @@ $('.btn-02').click(function (e) {
          $appointDocu,
       ]
       sessionStorage.setItem('appoint', JSON.stringify($appoint_patient))
-      console.log($appoint_patient)
       reservCompCount()
    }
 })
@@ -133,8 +132,8 @@ function reservCompCount() {
       count--
       $('main div.reserv-complete div span').replaceWith(`<span>${count} 초 기다려주세요.</span>`)
       if (count == 0) {
-         // location.replace('https://inqui012.github.io/CIP_Projects01/index.html')
-         $('main div.reserv-complete').css({ display: 'none' })
+         location.replace('https://inqui012.github.io/CIP_Projects01/index.html')
+         // $('main div.reserv-complete').css({ display: 'none' })
       }
    }, 1000)
 }
