@@ -69,7 +69,7 @@ header > div > div a:not(:first-child):before {
    display: inline-block;
 }
 header > div > div a:hover {
-   color: #4b91f1;
+   color: rgb(75, 145, 241);
 }
 header > div > div a:hover::before {
    color: #000;

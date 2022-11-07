@@ -139,7 +139,7 @@ ul.contents li.show {
    top: 60px;
 }
 .join .join__bt:hover {
-   background-color: forestgreen;
+   background-color: rgba(3, 98, 128, 1);
    color: white;
 }
 .delete-bt {
@@ -180,6 +180,6 @@ ul.contents li.show {
    margin-top: 10px;
 }
 #delete-bt:hover {
-   background-color: darkgreen;
+   background-color: rgba(3, 98, 128, 1);
    color: white;
 }
