@@ -12,7 +12,7 @@
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  background-color: #d7eeff;
+  background-color: rgba(75, 145, 241, 0.3);
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -27,12 +27,12 @@
 }
 
 .second .p1 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
 .secpnd .p2 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -53,18 +53,19 @@ ul.tabs li {
   background: none;
   color: rgb(0, 0, 0);
   display: inline-block;
-  padding: 10px 15px;
+  padding: 28px 48px;
   cursor: pointer;
+  font-size: 21px;
 }
 
 ul.tabs li.current {
-  background: #d7eeff;
+  background: rgba(3, 98, 128, 0.5);
   color: rgb(0, 0, 0);
 }
 
 .tab-content {
   display: none;
-  background: #d7eeff;
+  background: rgba(75, 145, 241, 0.3);
   padding: 20px;
   height: 1000px;
 }
@@ -89,6 +90,8 @@ ul.tabs li.current {
 
 .intro_box_con {
   text-align: left;
+  padding: 10px;
+  margin: 10px;
 }
 
 .intro_box_con strong {
