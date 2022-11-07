@@ -49,6 +49,7 @@ $('.btn-02').click(function (e) {
          $appointDocu,
       ]
       sessionStorage.setItem('appoint', JSON.stringify($appoint_patient))
+      console.log($appoint_patient)
       reservCompCount()
    }
 })
